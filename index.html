@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Este meta es para indicar el contenido o la tematica de la pagina web-->
+    <meta
+      name="keywords"
+      content="Portafolio Exequiel Maydana, Desarrollador Exequiel Maydana, Exequiel Maydana"
+    />
+    <!--Describo brevemente de que trata mi web-->
+    <meta
+      name="description"
+      content="En mi portafolio encontraran todo lo que tenga que ver con mi vida profesional como desarrollador, proyectos, contacto, experiencia y mas."
+    />
+
+    <!--Autor de la pagina web-->
+    <meta name="author" content="Exequiel Maydana" />
+    <meta name="robots" content="index" />
+
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/ef487b269e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--unimos html con la hora de estilos normalize-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--Unimos html con css-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Logo de la pagina-->
+    <link rel="icon" href="assets/ico-logo/icono.ico" />
+    <title>PORTAFOLIO|Exequiel Maydana</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <a class="logo">
+        <img src="assets/ico-logo/logo2.webp" alt="logodelapagina" />
+      </a>
+      <!--NAVBAR-->
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li>
+            <i class="fa-solid fa-house"></i>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-user"></i>
+            <a href="#sobremi">About me</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-laptop-code"></i>
+            <a href="#skill">Skills</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-diagram-project"></i>
+            <a href="#projec">Projects</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="#contacto">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--Con este div centre todo el contenido del main.-->
+        <!--INICIO-->
+        
+        <div class="inicio" id="home">
+          <div class="quiensoy">
+            <h1>I'am <span>Exequiel</span> Maydana</h1>
+            <div class="download-cv">
+            <a download="cv" href="./assets/cv.pdf">Download CV</a>
+          </div>
+        </div>
+        <div class="inicioimg">
+          <img img src="./assets/images/inicio.jpg" alt="image" width="600"> 
+        </div>
+        </div>
+
+        <!--SOBRE MI CARRERA COMO DESARROLLADOR-->
+        <div class="carrera" id="sobremi">
+          <div class="carreratit">
+            <h2>About me</h2>
+          </div>
+  
+          <div class="carreratext">
+            <img src="./assets/images/sobremi.jpg" alt="image" width="700">
+            <p>
+              Actualmente (2022) me encuentro estudiando una Tec. En Desarrollo
+              Web, en el año 2021 fue la primera vez que interactue con la
+              programacion en el curso de ArgentinaPrograma-#YoProgramo en el
+              cual conoci los principales conceptos, actividades y herramientas
+              que requiere un programador Front-End y Back-End reflexionando
+              sobre las diversas tareas de un Full Stack Developer en una
+              empresa. En este curso trabajamos con Java POO, SQL, HTML, CSS y
+              JavaScript. Cuando lo termine segui profundizando en HTML, CSS y
+              JavaScript con el objetivo de crear mi primer proyecto que es este
+              portafolio. Soy un desarrollador apasionado por programar, crear e
+              innovar. Soy una persona con mucha curiosidad y atencion a los
+              detalles, por lo que siempre estoy aprendiendo cosas nuevas y
+              nuevas formas de mejorar mi forma de trabajar.
+            </p>
+  
+          </div>
+        </div>
+
+        <!--Mis SKILLS-->
+
+        <div class="habilidades" id="skill">
+          <div>
+          <h2>Mis Skills</h2>
+          </div>
+    
+            <img class="img0" src="assets/icons/java.webp" alt="logojava" />
+            <img class="img1" src="assets/icons/servidor-sql.webp" alt="logosql" />
+    
+            <img class="img2" src="assets/icons/html.webp" alt="logohtml" />
+            <img class="img3" src="assets/icons/css.webp" alt="logocss" />
+            <img class="img4" src="assets/icons/java-script.webp" alt="logojavascript" />
+
+        </div>
+
+        <!--CONTACTO-->
+
+        <form id="contacto" class="form">
+          <div class="containerform">
+          <h3>Contact</h3>
+          <div class="group">
+            <label for="name"> Nombre </label>
+            <input
+              class="controls"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Escriba su nombre aquí"
+              required
+            />
+          </div>
+          <div class="group">
+            <label for="Email"> Email </label>
+            <input
+              class="controls"
+              type="email"
+              id="Email"
+              name="mail"
+              placeholder="Escriba su email aquí"
+              required
+            />
+          </div>
+          <div class="group">
+            <label for="msg"> Mensaje </label>
+            <textarea
+              class="controls"
+              id="msg"
+              name="message"
+              placeholder="Escriba su mensaje aquí"
+              required
+            ></textarea>
+          </div>
+          <div class="group">
+            <input
+              class="buton"
+              id="submit"
+              name="submit"
+              type="submit"
+              value="Enviar"
+            />
+          </div>
+        </div>
+        </form>
+    </main>
+
+    <!--FOOTERr-->
+
+    <footer class="foter">
+      <div class="foter__tit">
+        <img src="assets/ico-logo/logo2.webp" alt="logodelapagina" />
+        <h2>Exequiel Maydana</h2>
+        <h3>Frontend Developer</h3>
+      </div>
+    </footer>
+  </body>
+</html>

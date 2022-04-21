@@ -1,0 +1,245 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/*header y nav*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(40, 55, 71);
+  box-shadow: 0 3px 6px #6062e0;
+}
+
+
+.logo{
+  padding: 0 50px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.nav {
+  height: 60px;
+  padding: 0 50px;
+}
+
+.nav__menu{
+  display: flex;
+  gap: 20px;
+}
+
+.nav__menu li{
+  list-style: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.nav__menu a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.nav__menu i{
+  padding: 3px 3px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.nav__menu a:hover {
+  background-color: #5748dd;
+  transition: 0.6s;
+}
+
+.nav__menu i:hover {
+  background-color: #5748dd;
+  transition: 0.6s;
+}
+
+/**con el "main" y la clase "centra=contenido-main" centre todo el contenido y le di un width de 1440px para tener todo a una resolucion que no se rompa.*/
+
+/*INICIO*/
+
+.inicio{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: -70px;
+  padding: 100px 150px; 
+  margin: 0 50px 200px;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+.quiensoy{
+  display: flex;
+  display: inline-block;
+  margin-top: 150px;
+  margin-left: -50px;
+  padding: 20px 30px;
+}
+.quiensoy h1{
+  text-shadow: 3px 4px 6px #4d1dad
+}
+
+.download-cv a{
+  padding: 10px 10px;
+  background-color: #3841c9;
+  box-shadow: 3px 5px 7px 2px #4f4f8f;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*contando un poco sobre mi carrera como desarrollador*/
+
+.carrera {
+  display: block;
+  justify-content: space-between;
+  margin: 0 50px 200px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.carreratit{
+  display: block;
+}
+
+.carreratit h2{
+  margin-bottom: 10px;
+  margin-left: 500px;
+  letter-spacing: 3px;
+  text-shadow: 3px 4px 6px #4d1dad;
+}
+
+.carreratext{
+    display: flex;
+}
+
+/*mi habilidades*/
+
+.habilidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 50px;
+  margin: 0 50px 200px;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+
+.habilidades h2{
+  position: relative;
+  top: -150px; left: -100px;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+  text-shadow: 3px 4px 6px #4d1dad;
+}
+
+.img1{
+  position: relative;
+  bottom: -100px;
+}
+
+.img2{
+  position: relative;
+  top: -70px; right: -110px;
+}
+.img3{
+  position: relative;
+  right: -100px;
+}
+.img4{
+  position: relative;
+  top: -70px; right: -100px;
+}
+/*formulario*/
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 200px;
+  border-radius: 5px;
+}
+.containerform{
+  padding: 100px 150px;
+  font-size: 1.2em;
+}
+.containerform h3{
+  font-size: 40px;
+  text-shadow: 3px 4px 6px #4d1dad;
+}
+
+.group{
+  padding: 5px 0;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.group label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.controls{
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.group textarea {
+  width: 500px;
+  height: 150px;
+  resize: none;
+  border-radius: 5px;
+}
+
+.buton {
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 12px;
+  background-color: #3841c9;
+  border-color: #ffffff;
+  color: #fff;
+  box-shadow: 3px 3px 7px 2px #4f4f8f;
+}
+
+
+/*footerrr*/
+
+.foter {
+  width: 100%;
+  margin-bottom: 0;
+  color: #000000;
+  font-size: 1.3em;
+}
+
+.foter__tit {
+  text-align: center;
+  text-shadow: 3px 4px 6px #4d1dad;
+}
+.foter__tit img{
+  width: 50px;
+  margin-bottom: -30px;
+}
+
