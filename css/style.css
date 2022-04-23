@@ -72,8 +72,6 @@ body {
 .inicio{
   display: flex;
   justify-content: space-between;
-  position: relative;
-  left: -70px;
   padding: 100px 150px; 
   margin: 0 50px 200px;
   border-radius: 5px;
@@ -83,11 +81,15 @@ body {
   display: flex;
   display: inline-block;
   margin-top: 150px;
-  margin-left: -50px;
+  margin-left: 30px;
   padding: 20px 30px;
 }
 .quiensoy h1{
   text-shadow: 3px 4px 6px #4d1dad
+}
+
+.download-cv{
+  margin-top: 80px;
 }
 
 .download-cv a{
@@ -101,7 +103,14 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-
+.inicio{
+  padding: 10px;
+}
+.inicioimg img{
+  width: 600px;
+  max-width: 100%;
+  margin-right: 50px;
+}
 
 /*contando un poco sobre mi carrera como desarrollador*/
 
@@ -127,6 +136,12 @@ body {
 
 .carreratext{
     display: flex;
+}
+
+.carreratext img{
+  width: 600px;
+  max-width: 100%;
+  margin-right: 20px;
 }
 
 /*mi habilidades*/
