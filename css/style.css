@@ -56,11 +56,15 @@ body {
 }
 
 .nav__menu a:hover {
+  padding: 3px;
+  border-radius: 5px;
   background-color: #5748dd;
   transition: 0.6s;
 }
 
 .nav__menu i:hover {
+  padding: 3px;
+  border-radius: 5px;
   background-color: #5748dd;
   transition: 0.6s;
 }
