@@ -7,7 +7,7 @@ body {
 /*header y nav*/
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   padding: 5px 0;
   position: sticky;
@@ -15,16 +15,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(40, 55, 71);
-  box-shadow: 0 3px 6px #6062e0;
-}
-
-.logo{
-  padding: 0 50px;
-}
-
-.logo img {
-  width: 50px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 2px 9px #6062e0;
 }
 
 .nav {
@@ -45,41 +37,32 @@ body {
 
 .nav__menu a{
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
 }
 
 .nav__menu i{
   padding: 3px 3px;
   border-radius: 4px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
-.nav__menu a:hover {
-  padding: 3px;
-  border-radius: 5px;
-  background-color: #5748dd;
-  transition: 0.6s;
-}
 
-.nav__menu i:hover {
-  padding: 3px;
-  border-radius: 5px;
-  background-color: #5748dd;
-  transition: 0.6s;
-}
-
-/**con el "main" y la clase "centra=contenido-main" centre todo el contenido y le di un width de 1440px para tener todo a una resolucion que no se rompa.*/
 
 /*INICIO*/
 
 .inicio{
   display: flex;
-  justify-content: space-between;
-  padding: 100px 150px; 
-  margin: 0 50px 200px;
-  border-radius: 5px;
-  font-size: 1.2em;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
 }
+
+.inicio-img img{
+  width: 600px;
+  max-width: 100%;
+  margin-right: 50px;
+}
+
 
 .quiensoy{
   display: flex;
@@ -89,14 +72,19 @@ body {
   padding: 20px 30px;
 }
 
+.quiensoy-img img{
+  margin: 0 20px;
+  padding: 5px;
+  border-radius: 40px;
+  background-color: #a87ff5;
+}
+
 .quiensoy h1{
   text-shadow: 3px 4px 6px #4d1dad
 }
-
 .download-cv{
-  margin-top: 80px;
+  padding-top: 20px;
 }
-
 .download-cv a{
   padding: 10px 10px;
   background-color: #3841c9;
@@ -104,19 +92,8 @@ body {
   border-radius: 5px;
   border: none;
   color: #fff;
-  font-size: 1em;
   text-decoration: none;
   cursor: pointer;
-}
-
-.inicio{
-  padding: 10px;
-}
-
-.inicioimg img{
-  width: 600px;
-  max-width: 100%;
-  margin-right: 50px;
 }
 
 /*contando un poco sobre mi carrera como desarrollador*/
