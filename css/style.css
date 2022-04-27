@@ -1,27 +1,30 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   color: rgb(0, 0, 0);
 }
 
-/*header y nav*/
+:root{
+  font-family: "Montserrat", sans-serif;
+}
+
+/** HEADER Y NAV */
+
 .header {
+
   display: flex;
   justify-content: end;
-  align-items: center;
   padding: 5px 0;
   position: sticky;
   z-index: 999;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 3px 2px 9px #6062e0;
 }
 
-.nav {
+.nav{
   height: 60px;
-  padding: 0 50px;
+  margin-right: 20px;
 }
 
 .nav__menu{
@@ -31,7 +34,6 @@ body {
 
 .nav__menu li{
   list-style: none;
-  font-size: 18px;
   margin: 0 10px;
 }
 
@@ -46,49 +48,50 @@ body {
   color: rgb(0, 0, 0);
 }
 
+/** INICIO */
 
-
-/*INICIO*/
-
-.inicio{
+.home{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 200px;
+  margin-top: -70px;
+  min-height: 100vh;
 }
 
-.inicio-img img{
-  width: 600px;
+.home-img img{
+  width: 500px;
   max-width: 100%;
-  margin-right: 50px;
 }
-
 
 .quiensoy{
   display: flex;
   display: inline-block;
-  margin-top: 150px;
-  margin-left: 30px;
-  padding: 20px 30px;
+  padding: 30px 20px;
+}
+
+.quiensoy-img a{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .quiensoy-img img{
-  margin: 0 20px;
   padding: 5px;
   border-radius: 40px;
-  background-color: #a87ff5;
+  background-color: #8E7BEF;
 }
 
-.quiensoy h1{
-  text-shadow: 3px 4px 6px #4d1dad
-}
 .download-cv{
-  padding-top: 20px;
+  padding-top: 30px;
 }
+
+.download-cv i {
+  margin-right: 20px;
+}
+
 .download-cv a{
-  padding: 10px 10px;
+  padding: 10px 60px;
   background-color: #3841c9;
-  box-shadow: 3px 5px 7px 2px #4f4f8f;
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -96,119 +99,78 @@ body {
   cursor: pointer;
 }
 
-/*contando un poco sobre mi carrera como desarrollador*/
+/** MI CARRERA COMO DESARROLLADOR */
 
 .carrera {
-  display: block;
-  justify-content: space-between;
-  margin-bottom: 200px;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  font-size: 1.5em;
+  min-height: 100vh;
 }
 
-.carreratit{
-  display: block;
-}
-
-.carreratit h2{
+.carrera h2{
   margin-bottom: 10px;
-  margin-left: 500px;
   letter-spacing: 3px;
-  text-shadow: 3px 4px 6px #4d1dad;
 }
 
-.carreratext{
+.carrera-text{
     display: flex;
+    width: 80%;
 }
 
-.carreratext img{
-  width: 600px;
-  max-width: 100%;
-  margin-right: 20px;
-}
+/** MIS HABILIDADES */
 
-/*mi habilidades*/
-
-.habilidades {
+.skills {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 100px;
-  margin-bottom: 200px;
-  font-size: 1.5em;
-  border-radius: 10px;
+  min-height: 100vh;
 }
 
-.habilidades h2{
-  font-size: 1.5em;
+.skills h2{
   letter-spacing: 3px;
   margin-bottom: 100px;
   text-shadow: 3px 4px 6px #4d1dad;
 }
 
-/*formulario*/
-
-.form{
+/** PROYECTOS */
+.container{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin-bottom: 200px;
-  border-radius: 5px;
+  min-height: 100vh;
 }
 
-.containerform{
-  width: 400px;
-  padding: 50px 200px;
-  box-shadow: 2px 3px 8px 2px #4d1dad;
-}
-
-.containerform h3{
-  font-size: 40px;
-  text-shadow: 3px 4px 6px #4d1dad;
-}
-
-.group{
-  padding: 5px 0;
-  margin-bottom: 10px;
-}
-
-.group label{
+.proyecto{
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/** CONTACTO */
+
+.containerc{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  display: block;
-  margin-bottom: 5px;
+  align-items: center;
   text-align: center;
+  min-height: 100vh;
 }
 
-.controls{
-  width: 100%;
-  border-radius: 5px;
-  text-align: center;
+.containerc-contact{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
-.group textarea {
-  resize: none;
-  border-radius: 5px;
-  height: 100px;
-}
-
-.buton {
-  width: 100%;
-  padding: 5px 0;
-  border-radius: 12px;
-  background-color: #3841c9;
-  border-color: #ffffff;
-  color: #fff;
-  box-shadow: 3px 3px 7px 2px #4f4f8f;
-}
-
-/*footerrr*/
+/** FOOTER */
 
 .foter {
   width: 100%;
@@ -218,21 +180,10 @@ body {
   flex-direction: column;
   margin-bottom: 0;
   color: #000000;
-  font-size: 1.3em;
 }
 
 .foter__tit {
   text-align: center;
   text-shadow: 3px 4px 6px #4d1dad;
-}
-
-.foter__tit img{
-  width: 50px;
-  margin-bottom: -30px;
-}
-
-.foter__redes img{
-    width: 40px;
-    margin: 0 10px;
 }
 

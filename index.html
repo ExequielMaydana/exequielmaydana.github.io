@@ -40,8 +40,6 @@
     <!--Unimos html con css-->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!--Logo de la pagina-->
-    <link rel="icon" href="assets/ico-logo/icono.ico" />
     <title>PORTAFOLIO|Exequiel Maydana</title>
 
   </head>
@@ -57,7 +55,7 @@
         <ul class="nav__menu">
           <li>
             <i class="fa-solid fa-house"></i>
-            <a href="#home">Home</a>
+            <a href="#homee">Home</a>
           </li>
           <li>
             <i class="fa-solid fa-user"></i>
@@ -69,10 +67,7 @@
           </li>
           <li>
             <i class="fa-solid fa-diagram-project"></i>
-            <a href="#">Experiencia</a>
-          </li>
-          <li>
-            <a href="#">Portafolio</a>
+            <a href="#portfolio">Portafolio</a>
           </li>
           <li>
             <i class="fa-solid fa-envelope"></i>
@@ -86,20 +81,30 @@
       
       <!--INICIO-->
 
-      <div class="inicio" id="home">
-        <div class="inicio-img">
-          <img img src="./assets/images/inicio.jpg" alt="image" />
+      <div class="home" id="homee">
+        <div class="home-img">
+          <img img src="./assets/images/inicio.jpg" alt="image"/>
         </div>
         <div class="quiensoy">
-          <h1>I'am Exequiel Maydana</h1>
-          <h2>Desarrollador Web Full-Stack</h2>
+          <h1>Soy Exequiel Maydana</h1>
+          <p>Desarrollador Web Full-Stack</p>
           <di class="quiensoy-img">
-            <img src="./assets/icon-contact/linkedinn.svg" alt="logo-linkedin">
-            <img src="./assets/icon-contact/instagramaa.svg" alt="logo-insta">
-            <img src="./assets/icon-contact/twitterr.svg" alt="logo-twitter">
+            <a href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/"
+                target="_blank">
+              <img src="./assets/icon-contact/linkedinn.svg" alt="logo-linkedin" width="30">
+            </a>
+            <a href="https://www.instagram.com/exe_m666/" target="_blank">
+              <img src="./assets/icon-contact/instagramaa.svg" alt="logo-insta" width="30">
+            </a>
+            <a href="https://twitter.com/ExeBikerr" target="_blank">
+              <img src="./assets/icon-contact/twitterr.svg" alt="logo-twitter" width="30">
+            </a>
           </di>
           <div class="download-cv">
-            <a download="cv" href="./assets/cv.pdf">Download CV</a>
+            <a download="cv" href="./assets/cv.pdf">
+              <i class="fa-solid fa-envelope"></i>
+              Contáctame
+            </a>
           </div>
         </div>
       </div>
@@ -107,12 +112,8 @@
       <!--SOBRE MI CARRERA COMO DESARROLLADOR-->
 
       <div class="carrera" id="sobremi">
-        <div class="carreratit">
           <h2>About me</h2>
-        </div>
-
-        <div class="carreratext">
-          <img src="./assets/images/sobremi.jpg" alt="image"/>
+        <div class="carrera-text">
           <p>
             Actualmente (2022) me encuentro estudiando una Tec. En Desarrollo
             Web, en el año 2021 fue la primera vez que interactue con la
@@ -133,95 +134,77 @@
 
       <!--Mis SKILLS-->
 
-      <div class="habilidades" id="skill">
+      <div class="skills" id="skill">
         <div>
           <h2>Mis Skills</h2>
         </div>
-        <div class="habilidades__img">
-          <img src="./assets/icon-skill-tools/piton.png" alt="logopython" />
-          <img src="./assets/icon-skill-tools/servidor-sql.png" alt="logosql" />
-          <img src="./assets/icon-skill-tools/github.png" alt="logogit" />
-          <img src="./assets/icon-skill-tools/html-5.png" alt="logohtml" />
-          <img src="./assets/icon-skill-tools/css.png" alt="logocss" />
-          <img src="./assets/icon-skill-tools/js.png" alt="logojavascript" />
-          <img src="./assets/icon-skill-tools/nodejs.png" alt="logonodejs" />
-          <img src="./assets/icon-skill-tools/react.png" alt="logoreact" />
+        <div class="skills-img">
+          <img src="./assets/icon-skill-tools/piton.png" alt="logopython"/>
+          <img src="./assets/icon-skill-tools/servidor-sql.png" alt="logosql"/>
+          <img src="./assets/icon-skill-tools/github.png" alt="logogit"/>
+          <img src="./assets/icon-skill-tools/html-5.png" alt="logohtml"/>
+          <img src="./assets/icon-skill-tools/css.png" alt="logocss"/>
+          <img src="./assets/icon-skill-tools/js.png" alt="logojavascript"/>
+          <img src="./assets/icon-skill-tools/nodejs.png" alt="logonodejs"/>
+          <img src="./assets/icon-skill-tools/react.png" alt="logoreact"/>
         </div>
       </div>
 
-      <!--CONTACTO-->
+      <!--PORTFOLIO-->
 
-      <form id="contacto" class="form">
-        <div class="containerform">
-          <h3>Contact</h3>
-          <div class="group">
-            <label for="name"> Nombre </label>
-            <input
-              class="controls"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Escriba su nombre aquí"
-              required
-            />
-          </div>
-          <div class="group">
-            <label for="Email"> Email </label>
-            <input
-              class="controls"
-              type="email"
-              id="Email"
-              name="mail"
-              placeholder="Escriba su email aquí"
-              required
-            />
-          </div>
-          <div class="group">
-            <label for="msg"> Mensaje </label>
-            <textarea
-              class="controls"
-              id="msg"
-              name="message"
-              placeholder="Escriba su mensaje aquí"
-              required
-            ></textarea>
-          </div>
-          <div class="group">
-            <input
-              class="buton"
-              id="submit"
-              name="submit"
-              type="submit"
-              value="Enviar"
-            />
-          </div>
+      <div class="container" id="portfolio">
+        <div class="container-tit">
+          <h3>Portafolio</h3>
         </div>
-      </form>
+        <div class="proyecto">
+
+        <div class="proyecto-1">
+          <img src="./assets/proyectos/Rectangle 59.jpg" alt="e-comer">
+        </div>
+
+        <div class="proyecto-2">
+        <img src="./assets/proyectos/Rectangle 48.jpg" alt="web">
+        </div>
+
+        <div class="proyecto-3">
+          <img src="./assets/proyectos/Rectangle 49.jpg" alt="web2">
+        </div>
+
+      </div>
+      </div>
+
+      <!--CONTACTO--> 
+      <div class="containerc" id="contacto">
+
+        <div class="containerc-tit">
+          <h2>Contacto</h2>
+        </div>
+
+        <div class="containerc-contact">
+
+          <div class="containerc-car1">
+            <img src="./assets/icon-contact/phone3.svg" alt="logophone">
+            <h3>Numero celular</h3>
+            <p>1242342343</p>
+          </div>
+
+          <div class="contianerc-card2">
+            <img src="./assets/icon-contact/mail3.svg" alt="logoemail">
+            <h3>Email</h3>
+            <p>example@gmail.com</p>
+          </div>
+
+        </div>
+
+      </div>
     </main>
 
     <!--FOOTERr-->
 
     <footer class="foter">
       <div class="foter__tit">
-        <img src="assets/ico-logo/logo2.webp" alt="logodelapagina" />
         <h2>Exequiel Maydana</h2>
         <h3>¡Desarrollador en aumento!</h3>
-      </div>
-      <div class="foter__redes">
-        <a href="https://www.instagram.com/exe_m666/" target="_blank"
-          ><img src="./assets/icon-contact/instagram.webp" alt="iconinstagram"
-        /></a>
-        <a href="https://twitter.com/ExeBikerr" target="_blank"
-          ><img src="./assets/icon-contact/twitter.webp" alt="icontwitter"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/"
-          target="_blank"
-          ><img src="./assets/icon-contact/linkedin.webp" alt="iconlinkedin"
-        /></a>
-        <a href="https://github.com/ExequielMaydana" target="_blank"
-          ><img src="./assets/icon-contact/github-black.webp" alt="icongithub"
-        /></a>
       </div>
     </footer>
   </body>
