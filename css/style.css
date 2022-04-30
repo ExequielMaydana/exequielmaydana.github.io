@@ -15,7 +15,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(241, 239, 239);
   box-shadow: 1px 0 7px 2px #5D3BEF;
 }
 
@@ -37,6 +37,8 @@ body {
 .nav__menu a{
   text-decoration: none;
   color: #222222;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .nav__menu i{
@@ -49,7 +51,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 65px 0;
+  padding: 10px 0;
   margin-bottom: 100px;
 }
 
@@ -68,6 +70,7 @@ body {
   color: #222222;
   font-size: 50px;
   font-weight: 600;
+  text-shadow: 2px 3px 4px #5e3bf7;
 }
 
 .quiensoy p{
@@ -75,6 +78,7 @@ body {
   color: #423F40;
   font-size: 25px;
   font-weight: 600;
+  text-shadow: 2px 3px 4px #5D3BEF;
 }
 
 .quiensoy-img a{
@@ -88,6 +92,7 @@ body {
   padding: 5px;
   border-radius: 40px;
   background-color: #8E7BEF;
+  max-width: 100%;
 }
 
 .download-cv{
@@ -126,6 +131,7 @@ body {
   font-weight: 600;
   color: #222222;
   font-size: 50px;
+  text-shadow: 3px 3px 4px #6241f1;
 }
 
 .carrera-text{
@@ -156,6 +162,17 @@ body {
   font-weight: 600;
   color: #222222;
   font-size: 50px;
+  text-shadow: 2px 3px 4px #5D3BEF;
+}
+
+.skills-img{
+  padding: 20px 0;
+  border: 3px solid #423F40;
+  box-shadow: 5px 5px 7px 2px #5D3BEF;
+}
+
+.skills-img img{
+  max-width: 100%;
 }
 
 /** PROYECTOS */
@@ -172,6 +189,7 @@ body {
 .container-tit h3{
   font-size: 50px;
   color: #222222;
+  text-shadow: 2px 3px 4px #5D3BEF;
 }
 
 .proyecto{
@@ -197,6 +215,7 @@ body {
   font-weight: 600;
   color: #222222;
   font-size: 50px;
+  text-shadow: 2px 2px 4px #5D3BEF;
 }
 
 .containerc-contact{
@@ -212,6 +231,7 @@ body {
   padding: 40px;
   background-color: #f9f5f2;
   border-radius: 40px;
+  max-width: 100%;
 }
 
 .containerc-card1 h3{
@@ -230,6 +250,7 @@ body {
   padding: 40px;
   background-color: #f9f5f2;
   border-radius: 40px;
+  max-width: 100%;
 }
 
 .contianerc-card2 h3 {
@@ -257,10 +278,11 @@ body {
 }
 
 .foter-tit h2 {
-  color: #222222;
+  color: #161616;
+  text-shadow: 2px 2px 4px #5D3BEF;
 }
 
 .foter-tit h3 {
-  color: #423F40;
+  color: #333232;
+  text-shadow: 2px 2px 4px #5D3BEF;
 }
-
