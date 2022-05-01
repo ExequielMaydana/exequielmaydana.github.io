@@ -1,0 +1,72 @@
+.home{
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.nav__menu{
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+}
+.nav__menu li{
+    font-size: 10px;
+    margin: 5;
+}
+
+.home-img img{
+    width: 90%;
+}
+
+.proyecto{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+
+.proyecto > div > img{
+    width: 95%;
+    box-shadow: -1px 1px 10px 0px #000000
+}
+
+.skills-img{
+    width: 90%;
+}
+
+.skills{
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+#sobremi{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+.containerc-contact{
+    flex-direction: column;
+    gap: 0;
+}
+
+.containerc{
+    padding: 0;
+    margin: 30px;
+}
