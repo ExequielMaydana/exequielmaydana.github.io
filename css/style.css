@@ -198,12 +198,32 @@ body {
 .skills-img {
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
-  padding: 10px 0;
-  box-shadow: 3px 3px 5px #000000;
+  flex-direction: column;
   border-radius: 5px;
+  max-width: 100%;
   margin: 0;
+  gap: 30px;
+  padding: 10px 10px;
 }
+
+.img-backend{
+  border: 2px solid #423F40;
+  width: 200px;
+  padding: 10px;
+}
+
+.img-frontend{
+  border: 2px solid #801e3e;
+}
+
+.img-frame{
+  border: 2px solid #8a4b60;
+}
+
+..img-frame img{
+  max-width: 100%;
+}
+
 
 .skills-img img {
   max-width: 100%;
@@ -322,10 +342,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   background-color: rgb(227, 229, 233);
   padding: 10px 0;
   box-shadow: 0 -2px 9px 2px #5D3BEF;
+  margin: 0;
 }
 
 .foter-tit {

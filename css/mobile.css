@@ -1,7 +1,8 @@
-@media (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480px) {
     body {
       background-color: #fff;
       font-family: "Montserrat", sans-serif;
+      max-width: auto;
     }
     
     /** HEADER Y NAV */
@@ -153,6 +154,29 @@
     display: flex;
     max-width: 100%;
   }
+
+  .img-backend{
+    border: 2px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px #161616;
+    max-width: 100%;
+  }
+  .img-frontend{
+    border: 2px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px #161616;
+    max-width: 100%;
+  }
+  
+  .img-frame{
+    border: 2px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px #161616;
+    max-width: 100%;
+  }
   
   .skills-img img{
     max-width: 100%;
@@ -184,6 +208,10 @@
   /** CONTACTO */
   
   .container-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 70px 0 0;
     margin-bottom: 300px;
     max-width: 100%;
@@ -197,15 +225,19 @@
   .contacto-contactar{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
   }
   
    /** telefono */
+
+   .contactar-card1{
+     width: 200px;
+   }
   
   .contactar-card1 img{
     width: 30px;
     padding: 40px;
-    max-width: 100%;
   }
   
   .contactar-card1 h3{
@@ -220,10 +252,12 @@
   
    /** Email */
   
+  .contactar-card2{
+      width: 200px;
+  }
   .contactar-card2 img{
     width: 30px;
     padding: 40px;
-    max-width: 100%;
   }
   
   .contactar-card2 h3 {
