@@ -1,6 +1,6 @@
 body {
   background-color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -8,41 +8,65 @@ body {
 /** HEADER Y NAV */
 
 .header {
-  display: flex;
-  justify-content: end;
-  position: sticky;
-  z-index: 999;
+  height: 70px;
+  position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgb(241, 239, 239);
+  background-color: rgb(213, 216, 220);
   box-shadow: 1px 0 7px 2px #5D3BEF;
 }
 
 .nav{
-  margin-right: 20px;
-  height: 65px;
-}
-
-.nav__menu{
   display: flex;
-  gap: 20px;
+  justify-content: flex-end;
+
+
+  /*esto lo saque de bootstrap*/ 
+  max-width: 1442px; /*breakpo */
 }
 
-.nav__menu li{
+.nav-menu{
+  display: flex;
+  margin-right: 30px;
   list-style: none;
+}
+.nav-menu-item{
   margin: 0 10px;
+  line-height: 35px;
+  text-transform: uppercase;
+  width: max-content;
 }
 
-.nav__menu a{
+.fa-solid{
+  color: rgb(23, 32, 42 );
+}
+
+.nav-link{
+  color: rgb(23, 32, 42 );
   text-decoration: none;
-  color: #222222;
-  text-transform: uppercase;
   font-weight: bold;
 }
 
-.nav__menu i{
-  color: #222222;
+.nav-menu-link{
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover{
+  background-color: #5f73e7;
+  color: rgb(229, 231, 233 );
+  transition: 0.5s;
+}
+
+.nav-toggle{
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 50px;
+  cursor: pointer;
+
+  /* para que no se vea en desktop, un display: none */
+  display: none;
 }
 
 /** INICIO */
@@ -51,8 +75,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
-  margin-bottom: 100px;
+  padding: 70px 0 0;
+  margin-bottom: 200px;
 }
 
 .home-img img{
@@ -60,20 +84,22 @@ body {
   max-width: 100%;
 }
 
-.quiensoy{
+.home-quiensoy{
+  display: flex;
+  justify-content: center;
   display: inline-block;
   padding: 30px 20px;
 }
 
-.quiensoy h1{
+.home-quiensoy h1{
   margin-bottom: 20px;
   color: #222222;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   text-shadow: 2px 3px 4px #5e3bf7;
 }
 
-.quiensoy p{
+.home-quiensoy p{
   margin-bottom: 30px;
   color: #423F40;
   font-size: 25px;
@@ -89,23 +115,23 @@ body {
 }
 
 .quiensoy-img img{
-  padding: 5px;
-  border-radius: 40px;
-  background-color: #8E7BEF;
+  padding: 3px;
+  border-radius: 10px;
+  background-color: #5f73e7;
+  box-shadow: 3px 3px 5px #000000;
   max-width: 100%;
-}
-
-.download-cv{
-  padding-top: 30px;
+  margin-bottom: 20px;
 }
 
 .download-cv i {
   margin-right: 20px;
+  color: #f9f5f2;
 }
 
 .download-cv a{
   padding: 10px 60px;
-  background-color: #5D3BEF;
+  background-color: #5f73e7;
+  box-shadow: 3px 3px 5px #000000;
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -121,16 +147,16 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 65px 0;
+  padding: 70px 0 0;
   margin-bottom: 100px;
 }
 
 .carrera h2{
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   letter-spacing: 3px;
   font-weight: 600;
   color: #222222;
-  font-size: 50px;
+  font-size: 40px;
   text-shadow: 3px 3px 4px #6241f1;
 }
 
@@ -152,73 +178,76 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 65px 0;
+  padding: 70px 0 0;
   margin-bottom: 100px;
 }
 
-.skills h2{
+.skills-titulo h2 {
   letter-spacing: 3px;
   margin-bottom: 100px;
   font-weight: 600;
   color: #222222;
-  font-size: 50px;
-  text-shadow: 2px 3px 4px #5D3BEF;
+  font-size: 40px;
+  text-shadow: 3px 3px 4px #6241f1;
 }
 
-.skills-img{
-  padding: 20px 0;
-  border: 3px solid #423F40;
-  box-shadow: 5px 5px 7px 2px #5D3BEF;
+.skills-img {
+  padding: 20px 5px;
+  border: 2px solid #423F40;
+  box-shadow: 2px 2px 7px 2px #5D3BEF;
+  border-radius: 5px;
 }
 
-.skills-img img{
+.skills-img img {
   max-width: 100%;
 }
 
 /** PROYECTOS */
+
 .container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 65px 0;
+  padding: 70px 0 0;
   margin-bottom: 100px;
 }
 
 .container-tit h3{
-  font-size: 50px;
+  font-size: 40px;
   color: #222222;
   text-shadow: 2px 3px 4px #5D3BEF;
 }
 
-.proyecto{
+.container-proyecto{
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 20px;
 }
+
 
 /** CONTACTO */
 
-.containerc{
+.container-contacto{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 65px 0;
-  margin-bottom: 200px;
+  padding: 70px 0 0;
+  margin-bottom: 100px;
 }
 
-.containerc-tit h2{
+.contacto-tit h2{
   margin-bottom: 40px;
   font-weight: 600;
   color: #222222;
-  font-size: 50px;
-  text-shadow: 2px 2px 4px #5D3BEF;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px #5D3BEF;
 }
 
-.containerc-contact{
+.contacto-contactar{
   display: flex;
   flex-direction: row;
   gap: 60px;
@@ -226,7 +255,7 @@ body {
 
  /** telefono */
 
-.containerc-card1 img{
+.contactar-card1 img{
   width: 40px;
   padding: 40px;
   background-color: #f9f5f2;
@@ -234,18 +263,18 @@ body {
   max-width: 100%;
 }
 
-.containerc-card1 h3{
+.contactar-card1 h3{
   font-weight: 600;
   color: #222222;
 }
 
-.containerc-card1 p {
+.contactar-card1 p {
   color: #423F40;
 }
 
  /** Email */
 
-.contianerc-card2 img{
+.contactar-card2 img{
   width: 40px;
   padding: 40px;
   background-color: #f9f5f2;
@@ -253,23 +282,23 @@ body {
   max-width: 100%;
 }
 
-.contianerc-card2 h3 {
+.contactar-card2 h3 {
   font-weight: 600;
   color: #222222;
 }
 
-.contianerc-card2 p{
+.contactar-card2 p{
   color: #423F40;
 }
 
 /** FOOTER */
 
 .foter {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   margin-bottom: 0;
 }
 
@@ -278,11 +307,275 @@ body {
 }
 
 .foter-tit h2 {
+  font-size: 30px;
   color: #161616;
-  text-shadow: 2px 2px 4px #5D3BEF;
+  text-shadow: 2px 3px 3px #5D3BEF;
 }
 
 .foter-tit h3 {
   color: #333232;
+  text-shadow: 2px 3px 3px #5D3BEF;
+  font-size: 20px;
+}
+
+
+/** MEDIA QUERY */
+
+/** menu */
+@media (min-width:320px) and (max-width: 480px){
+  body {
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /** HEADER Y NAV */
+  
+  .header {
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(241, 239, 239);
+    box-shadow: 1px 0 7px 2px #5D3BEF;
+  }
+  
+  .nav-menu{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(93, 109, 126);
+    position: fixed;
+    left: 0;
+    top: 25px;
+    width: 100%;
+    /*paraqueocupetodoelespaciohaciaabajomenoslodemimenuendesktop*/height: calc(100% - 20px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+}
+  .nav-menu-item{
+    line-height: 50px;
+    margin-right: 35%;
+  }
+
+  .nav-menu-link:hover{
+    background: none;
+    color: rgb(255, 255, 255);
+  }
+
+  .nav-toggle{
+    line-height: 45px;
+    display: block;
+  }
+
+  .nav-toggle i{
+    color: rgb(93, 109, 126);
+  }
+
+  .nav-menu_visible{
+    left: 0;
+  }
+
+  /*para que solo aparezcan bordes si me muevo con tab */
+  .nav-toggle:focus:not(:focus-visible){
+    outline: none;
+  }
+
+  /** INICIO */
+
+.home{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.home-img img{
+  width: 250px;
+}
+
+.home-quiensoy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-quiensoy h1{
+  font-size: 25px;
+  text-shadow: 2px 2px 3px #5D3BEF;
+}
+
+.home-quiensoy p{
+  font-size: 15px;
+}
+
+.quiensoy-img a{
+  margin: 0 20px;
+  margin-bottom: 10px;
+}
+
+.download-cv i {
+  margin-right: 15px;
+  color: #f9f5f2;
+}
+
+.download-cv a{
+  padding: 5px 40px;
+}
+
+
+/** MI CARRERA COMO DESARROLLADOR */
+
+.carrera {
+  padding: 70px 0 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.carrera h2{
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px #5D3BEF;
+}
+
+.carrera-text{
+  width: 100%;
+}
+
+.carrera-text p {
+  padding: 0 10px;
+  width: 100%;
+  font-size: 15px;
+}
+
+/** MIS HABILIDADES */
+
+.skills {
+  padding: 70px 0 0;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-titulo h2{
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px #5D3BEF;
+}
+
+.skills-img{
+  flex-direction: row;
+  padding: 10px 5px;
+}
+
+.skills-img img{
+  max-width: 100%;
+  width: 50px;
+}
+
+/** PROYECTOS */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-tit h3{
+  text-shadow: 2px 2px 3px #5D3BEF;
+  font-size: 20px;
+}
+
+.container-proyecto{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 5px;
+  gap: 10px;
+}
+
+.container-proyecto img{
+  max-width: 100%;
+}
+
+
+/** CONTACTO */
+
+.container-contacto{
+  margin-bottom: 200px;
+}
+
+.contacto-tit h2{
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px #5D3BEF;
+}
+
+.contacto-contactar{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+ /** telefono */
+
+.contactar-card1 img{
+  width: 30px;
+  padding: 40px;
+  max-width: 100%;
+}
+
+.contactar-card1 h3{
+  font-size: 15px;
+  color: #222222;
+}
+
+.contactar-card1 p {
+  font-size: 15px;
+  color: #423F40;
+}
+
+ /** Email */
+
+.contactar-card2 img{
+  width: 30px;
+  padding: 40px;
+  max-width: 100%;
+}
+
+.contactar-card2 h3 {
+  font-size: 15px;
+  color: #222222;
+}
+
+.contactar-card2 p{
+  font-size: 15px;
+  color: #423F40;
+}
+
+
+/** FOOTER */
+
+.foter {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.foter-tit {
+  text-align: center;
+}
+
+.foter-tit h2 {
+  font-size: 25px;
+  color: #161616;
+  text-shadow: 2px 3px 3px #5D3BEF;
+}
+
+.foter-tit h3 {
+  color: #333232;
+  font-size: 20px;
   text-shadow: 2px 2px 4px #5D3BEF;
+}
+
 }

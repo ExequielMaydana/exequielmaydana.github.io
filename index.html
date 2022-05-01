@@ -40,6 +40,8 @@
     <!--Unimos html con css-->
     <link rel="stylesheet" href="./css/style.css"/>
 
+    <script src="./js/coding.js" defer></script>
+
     <title>PORTAFOLIO|Exequiel Maydana</title>
 
   </head>
@@ -52,26 +54,32 @@
       <!--NAVBAR-->
 
       <nav class="nav">
-        <ul class="nav__menu">
-          <li>
+
+        <!--agregamos un aria-label para las personas con discapacidad-->
+
+        <button class="nav-toggle" aria-label="Abrir menu"> 
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
             <i class="fa-solid fa-house"></i>
-            <a href="#homee">Home</a>
+            <a href="#homee" class="nav-menu-link nav-link">Home</a>
           </li>
-          <li>
+          <li class="nav-menu-item">
             <i class="fa-solid fa-user"></i>
-            <a href="#sobremi">Acerca de mi</a>
+            <a href="#sobremi" class="nav-menu-link nav-link">Acerca de mi</a>
           </li>
-          <li>
+          <li class="nav-menu-item">
             <i class="fa-solid fa-laptop-code"></i>
-            <a href="#skill">Mis habilidades</a>
+            <a href="#skill" class="nav-menu-link nav-link">Mis habilidades</a>
           </li>
-          <li>
+          <li class="nav-menu-item">
             <i class="fa-solid fa-diagram-project"></i>
-            <a href="#portfolio">Portafolio</a>
+            <a href="#portfolio" class="nav-menu-link nav-link">Portafolio</a>
           </li>
-          <li>
+          <li class="nav-menu-item">
             <i class="fa-solid fa-envelope"></i>
-            <a href="#contacto">Contacto</a>
+            <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -85,10 +93,10 @@
         <div class="home-img">
           <img img src="./assets/images/inicio.jpg" alt="image"/>
         </div>
-        <div class="quiensoy">
-          <h1>Soy<br>Exequiel Maydana</h1>
+        <div class="home-quiensoy">
+          <h1>Exequiel Maydana</h1>
           <p>Desarrollador Web Full-Stack</p>
-          <di class="quiensoy-img">
+          <div class="quiensoy-img">
             <a href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/"
                 target="_blank">
               <img src="./assets/icon-contact/linkedinn.svg" alt="logo-linkedin" width="30">
@@ -99,7 +107,7 @@
             <a href="https://twitter.com/ExeBikerr" target="_blank">
               <img src="./assets/icon-contact/twitterr.svg" alt="logo-twitter" width="30">
             </a>
-          </di>
+          </div>
           <div class="download-cv">
             <a download="cv" href="./assets/cv.pdf">
               <i class="fa-solid fa-envelope"></i>
@@ -135,7 +143,7 @@
       <!--Mis SKILLS-->
 
       <div class="skills" id="skill">
-        <div>
+        <div class="skills-titulo">
           <h2>Mis Skills</h2>
         </div>
         <div class="skills-img">
@@ -156,7 +164,7 @@
         <div class="container-tit">
           <h3>Portafolio</h3>
         </div>
-        <div class="proyecto">
+        <div class="container-proyecto">
         <div class="proyecto-1">
           <img src="./assets/proyectos/Rectangle59.jpg" alt="e-comer">
         </div>
@@ -170,17 +178,17 @@
       </div>
 
       <!--CONTACTO--> 
-      <div class="containerc" id="contacto">
-        <div class="containerc-tit">
+      <div class="container-contacto" id="contacto">
+        <div class="contacto-tit">
           <h2>Contacto</h2>
         </div>
-          <div class="containerc-contact">
-            <div class="containerc-card1">
+          <div class="contacto-contactar">
+            <div class="contactar-card1">
             <img src="./assets/icon-contact/phone3.svg" alt="logophone">
             <h3>Numero celular</h3>
             <p>3454-076854</p>
             </div>
-            <div class="contianerc-card2">
+            <div class="contactar-card2">
             <img src="./assets/icon-contact/mail3.svg" alt="logoemail">
             <h3>Email</h3>
             <p>maydanarkt@gmail.com</p>
