@@ -1,0 +1,258 @@
+@media (min-width:320px) and (max-width: 480px){
+    body {
+      background-color: #fff;
+      font-family: "Montserrat", sans-serif;
+    }
+    
+    /** HEADER Y NAV */
+    
+    .header {
+      height: 40px;
+      position: fixed;
+      width: 100%;
+      background-color: rgb(241, 239, 239);
+      box-shadow: 1px 0 7px 2px #5D3BEF;
+    }
+    
+    .nav-menu{
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+      background-color: rgb(93, 109, 126);
+      position: fixed;
+      left: 0;
+      top: 25px;
+      width: 100%;
+      /*paraqueocupetodoelespaciohaciaabajomenoslodemimenuendesktop*/height: calc(100% - 20px);
+      overflow-y: auto;
+      left: 100%;
+      transition: left 0.3s;
+  }
+    .nav-menu-item{
+      line-height: 50px;
+      margin-right: 35%;
+    }
+  
+    .nav-menu-link:hover{
+      background: none;
+      color: rgb(255, 255, 255);
+    }
+  
+    .nav-toggle{
+      line-height: 45px;
+      display: block;
+    }
+  
+    .nav-toggle i{
+      color: rgb(93, 109, 126);
+    }
+  
+    .nav-menu_visible{
+      left: 0;
+    }
+  
+    /*para que solo aparezcan bordes si me muevo con tab */
+    .nav-toggle:focus:not(:focus-visible){
+      outline: none;
+    }
+  
+    /** INICIO */
+  
+  .home{
+    padding: 70px 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  
+  .home-img img{
+    width: 250px;
+  }
+  
+  .home-quiensoy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .home-quiensoy h1{
+    font-size: 20px;
+    text-shadow: 2px 2px 6px #5D3BEF;
+  }
+  
+  .home-quiensoy p{
+    font-size: 15px;
+  }
+  
+  .quiensoy-img a{
+    margin: 0 20px;
+    margin-bottom: 10px;
+  }
+  
+  .download-cv i {
+    margin-right: 15px;
+    color: #f9f5f2;
+  }
+  
+  .download-cv a{
+    max-width: 100%;
+  }
+  
+  
+  /** MI CARRERA COMO DESARROLLADOR */
+  
+  .carrera {
+    padding: 70px 0 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  
+  .carrera h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px #5D3BEF;
+  }
+  
+  .carrera-text{
+    width: 100%;
+  }
+  
+  .carrera-text p {
+    padding: 0 10px;
+    width: 100%;
+    font-size: 15px;
+  }
+  
+  /** MIS HABILIDADES */
+  
+  .skills {
+    padding: 70px 0 0;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skills-titulo h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px #5D3BEF;
+  }
+  
+  .skills-img{
+    flex-direction: row;
+    padding: 10px 5px;
+  }
+  
+  .skills-img img{
+    max-width: 100%;
+    width: 50px;
+  }
+  
+  /** PROYECTOS */
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-tit h3{
+    text-shadow: 2px 2px 3px #5D3BEF;
+    font-size: 20px;
+  }
+  
+  .container-proyecto{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5px;
+    gap: 10px;
+  }
+  
+  .container-proyecto img{
+    max-width: 100%;
+  }
+  
+  
+  /** CONTACTO */
+  
+  .container-contacto{
+    margin-bottom: 200px;
+  }
+  
+  .contacto-tit h2{
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px #5D3BEF;
+  }
+  
+  .contacto-contactar{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+   /** telefono */
+  
+  .contactar-card1 img{
+    width: 30px;
+    padding: 40px;
+    max-width: 100%;
+  }
+  
+  .contactar-card1 h3{
+    font-size: 15px;
+    color: #222222;
+  }
+  
+  .contactar-card1 p {
+    font-size: 15px;
+    color: #423F40;
+  }
+  
+   /** Email */
+  
+  .contactar-card2 img{
+    width: 30px;
+    padding: 40px;
+    max-width: 100%;
+  }
+  
+  .contactar-card2 h3 {
+    font-size: 15px;
+    color: #222222;
+  }
+  
+  .contactar-card2 p{
+    font-size: 15px;
+    color: #423F40;
+  }
+  
+  
+  /** FOOTER */
+  
+  .foter {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .foter-tit {
+    text-align: center;
+  }
+  
+  .foter-tit h2 {
+    font-size: 25px;
+    color: #161616;
+    text-shadow: 2px 3px 3px #5D3BEF;
+  }
+  
+  .foter-tit h3 {
+    color: #333232;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #5D3BEF;
+  }
+  
+  }
