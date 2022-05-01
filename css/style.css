@@ -1,23 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #fff;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
-  max-width: 1320px;
 }
 
 /** HEADER Y NAV */
 
 .header {
+  display: flex;
+  justify-content: flex-end;
   height: 70px;
   position: fixed;
   width: 100%;
-  background-color: rgb(213, 216, 220);
+  background-color: rgb(227, 229, 233);
   box-shadow: 1px 0 7px 2px #5D3BEF;
 }
 
 .nav{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 
 
   /*esto lo saque de bootstrap*/ 
@@ -31,7 +38,6 @@ body {
 }
 .nav-menu-item{
   margin: 0 10px;
-  line-height: 35px;
   text-transform: uppercase;
   width: max-content;
 }
@@ -52,8 +58,8 @@ body {
 }
 
 .nav-menu-link:hover{
-  background-color: #5f73e7;
-  color: rgb(229, 231, 233 );
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   transition: 0.5s;
 }
 
@@ -77,6 +83,7 @@ body {
   align-items: center;
   padding: 70px 0 0;
   margin-bottom: 200px;
+  max-width: 100%;
 }
 
 .home-img img{
@@ -87,8 +94,8 @@ body {
 .home-quiensoy{
   display: flex;
   justify-content: center;
+  flex-direction: column;
   display: inline-block;
-  padding: 30px 20px;
 }
 
 .home-quiensoy h1{
@@ -99,7 +106,7 @@ body {
 }
 
 .home-quiensoy p{
-  margin: 0 0 20px;
+  margin: 0 0 40px;
   color: #423F40;
   font-size: 25px;
   font-weight: 600;
@@ -108,7 +115,7 @@ body {
 .quiensoy-img a{
   text-decoration: none;
   display: inline-block;
-  margin: 0 20px 20px
+  margin: 0 20px 40px
 }
 
 .quiensoy-img img{
@@ -117,7 +124,6 @@ body {
   background-color: #5f73e7;
   box-shadow: 3px 3px 5px #000000;
   max-width: 100%;
-  margin-bottom: 20px;
 }
 
 .download-cv i {
@@ -134,6 +140,7 @@ body {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  max-width: 100%;
 }
 
 /** MI CARRERA COMO DESARROLLADOR */
@@ -142,19 +149,18 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 90px 0 0;
+  margin-bottom: 200px;
   align-items: center;
   text-align: center;
-  padding: 70px 0 0;
-  margin-bottom: 100px;
 }
 
 .carrera h2{
-  margin-bottom: 30px;
+  margin: 50px 0 50px;
   letter-spacing: 3px;
   font-weight: 600;
   color: #222222;
   font-size: 40px;
-  text-shadow: 3px 3px 4px #5655b6;
 }
 
 .carrera-text{
@@ -165,6 +171,7 @@ body {
 .carrera-text p {
   color: #423F40;
   font-size: 20px;
+  max-width: 100%;
 }
 
 /** MIS HABILIDADES */
@@ -175,25 +182,27 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 70px 0 0;
-  margin-bottom: 100px;
+  padding: 90px 0 0;
+  margin-bottom: 200px;
 }
 
 .skills-titulo h2 {
   letter-spacing: 3px;
-  margin-bottom: 40px;
+  margin: 50px 0 40px;
   font-weight: 600;
   color: #222222;
   font-size: 40px;
-  text-shadow: 3px 3px 4px #5655b6;
+  letter-spacing: 3px;
 }
 
 .skills-img {
-  padding: 20px 5px;
-  border: 2px solid #423F40;
-  box-shadow: 2px 2px 7px 2px #5D3BEF;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 10px 0;
+  box-shadow: 3px 3px 5px #000000;
   border-radius: 5px;
-  max-width: 100%;
+  margin: 0;
 }
 
 .skills-img img {
@@ -208,14 +217,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 70px 0 0;
-  margin-bottom: 100px;
+  padding: 90px 0 0;
+  margin-bottom: 200px;
 }
 
 .container-tit h3{
+  margin: 50px 0 50px;
   font-size: 40px;
   color: #222222;
-  text-shadow: 3px 3px 4px #5655b6;
   letter-spacing: 3px;
 }
 
@@ -234,16 +243,15 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 70px 0 0;
-  margin-bottom: 100px;
+  padding: 90px 0 0;
+  margin-bottom: 300px;
 }
 
 .contacto-tit h2{
-  margin-bottom: 40px;
+  margin: 50px 0 50px;
   font-weight: 600;
   color: #222222;
   font-size: 40px;
-  text-shadow: 2px 2px 5px #5D3BEF;
 }
 
 .contacto-contactar{
@@ -261,14 +269,16 @@ body {
 }
 
 .contactar-card1 img{
-  width: 40px;
+  width: 50px;
   padding: 40px;
   background-color: #f9f5f2;
   border-radius: 40px;
   max-width: 100%;
+  margin-bottom: 10px;
 }
 
 .contactar-card1 h3{
+  margin: 0 0 10px;
   font-weight: 600;
   color: #222222;
 }
@@ -287,16 +297,18 @@ body {
 }
 
 .contactar-card2 img{
-  width: 40px;
+  width: 50px;
   padding: 40px;
   background-color: #f9f5f2;
   border-radius: 40px;
   max-width: 100%;
+  margin-bottom: 10px;
 }
 
 .contactar-card2 h3 {
   font-weight: 600;
   color: #222222;
+  margin-bottom: 10px;
 }
 
 .contactar-card2 p{
@@ -311,7 +323,9 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 0;
+  background-color: rgb(227, 229, 233);
+  padding: 10px 0;
+  box-shadow: 0 -2px 9px 2px #5D3BEF;
 }
 
 .foter-tit {
@@ -321,11 +335,10 @@ body {
 .foter-tit h2 {
   font-size: 30px;
   color: #161616;
-  text-shadow: 2px 3px 3px #5D3BEF;
+  margin-bottom: 5px;
 }
 
 .foter-tit h3 {
   color: #333232;
-  text-shadow: 2px 3px 3px #5D3BEF;
   font-size: 20px;
 }

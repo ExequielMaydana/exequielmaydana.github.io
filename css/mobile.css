@@ -1,4 +1,4 @@
-@media (min-width:320px) and (max-width: 480px){
+@media (max-width: 480px){
     body {
       background-color: #fff;
       font-family: "Montserrat", sans-serif;
@@ -21,16 +21,17 @@
       background-color: rgb(93, 109, 126);
       position: fixed;
       left: 0;
-      top: 25px;
+      top: 40px;
       width: 100%;
+
+      
       /*paraqueocupetodoelespaciohaciaabajomenoslodemimenuendesktop*/height: calc(100% - 20px);
       overflow-y: auto;
       left: 100%;
       transition: left 0.3s;
   }
     .nav-menu-item{
-      line-height: 50px;
-      margin-right: 35%;
+      margin-top: 30px;
     }
   
     .nav-menu-link:hover{
@@ -44,7 +45,7 @@
     }
   
     .nav-toggle i{
-      color: rgb(93, 109, 126);
+      color: rgb(8, 8, 8);
     }
   
     .nav-menu_visible{
@@ -59,15 +60,21 @@
     /** INICIO */
   
   .home{
-    padding: 70px 0 0;
+    padding: 40px 0 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin-bottom: 100px;
+    max-width: 100%;
+  }
+
+  .home-img{
+    max-width: 100%;
+    margin: 0;
   }
   
   .home-img img{
-    width: 250px;
+    max-width: 100%;
+    width: 350px;
   }
   
   .home-quiensoy{
@@ -75,20 +82,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 0 30px;
   }
   
   .home-quiensoy h1{
-    font-size: 20px;
-    text-shadow: 2px 2px 6px #5D3BEF;
+    margin: 0 0 10px;
+    font-size: 25px;
   }
   
   .home-quiensoy p{
-    font-size: 15px;
+    font-size: 18px;
+    margin: 0 0 20px;
   }
   
   .quiensoy-img a{
-    margin: 0 20px;
-    margin-bottom: 10px;
+    margin: 0 20px 30px;
   }
   
   .download-cv i {
@@ -104,46 +112,46 @@
   /** MI CARRERA COMO DESARROLLADOR */
   
   .carrera {
-    padding: 70px 0 0;
     display: flex;
     flex-direction: column;
+    padding: 70px 0 0;
     margin-bottom: 100px;
+    max-width: 100%;
   }
   
   .carrera h2{
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-shadow: 2px 2px 3px #5D3BEF;
+    margin: 40px 0 30px;
+    font-size: 25px;
   }
   
   .carrera-text{
+    display: flex;
     width: 100%;
   }
   
   .carrera-text p {
-    padding: 0 10px;
-    width: 100%;
+    padding: 0 5px;
+    max-width: 100%;
     font-size: 15px;
+    margin: 0;
   }
   
   /** MIS HABILIDADES */
   
   .skills {
     padding: 70px 0 0;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 200px;
+    max-width: 100%;
   }
   
   .skills-titulo h2{
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-shadow: 2px 2px 3px #5D3BEF;
+    margin: 120px 0 30px;
+    font-size: 25px;
   }
   
   .skills-img{
-    flex-direction: row;
-    padding: 10px 5px;
+    display: flex;
+    max-width: 100%;
   }
   
   .skills-img img{
@@ -154,22 +162,18 @@
   /** PROYECTOS */
   
   .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
+    margin: 0 0 200px;
+    padding: 70px 0 0;
   }
   
   .container-tit h3{
-    text-shadow: 2px 2px 3px #5D3BEF;
-    font-size: 20px;
+    margin: 70px 0 50px;
+    font-size: 25px;
   }
-  
+
   .container-proyecto{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 5px;
-    gap: 10px;
+    max-width: 100%;
   }
   
   .container-proyecto img{
@@ -180,19 +184,20 @@
   /** CONTACTO */
   
   .container-contacto{
-    margin-bottom: 200px;
+    padding: 70px 0 0;
+    margin-bottom: 300px;
+    max-width: 100%;
   }
   
   .contacto-tit h2{
-    margin-bottom: 40px;
-    font-size: 20px;
-    text-shadow: 2px 2px 3px #5D3BEF;
+    margin: 30px 0 50px;
+    font-size: 25px;
   }
   
   .contacto-contactar{
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 20px;
   }
   
    /** telefono */
@@ -246,13 +251,11 @@
   .foter-tit h2 {
     font-size: 25px;
     color: #161616;
-    text-shadow: 2px 3px 3px #5D3BEF;
   }
   
   .foter-tit h3 {
     color: #333232;
     font-size: 20px;
-    text-shadow: 2px 2px 4px #5D3BEF;
   }
   
   }
