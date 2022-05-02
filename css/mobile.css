@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     body {
       background-color: #fff;
       font-family: "Montserrat", sans-serif;
@@ -61,7 +61,7 @@
     /** INICIO */
   
   .home{
-    padding: 40px 0 0;
+    padding: 70px 0 0;
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
@@ -138,51 +138,29 @@
   }
   
   /** MIS HABILIDADES */
-  
-  .skills {
-    padding: 70px 0 0;
-    margin-bottom: 200px;
-    max-width: 100%;
-  }
-  
-  .skills-titulo h2{
-    margin: 120px 0 30px;
-    font-size: 25px;
-  }
-  
-  .skills-img{
-    display: flex;
-    max-width: 100%;
-  }
 
-  .img-backend{
-    border: 2px solid #c9c9c9;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 4px #161616;
-    max-width: 100%;
-  }
-  .img-frontend{
-    border: 2px solid #c9c9c9;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 4px #161616;
-    max-width: 100%;
-  }
-  
-  .img-frame{
-    border: 2px solid #c9c9c9;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 4px #161616;
-    max-width: 100%;
-  }
-  
-  .skills-img img{
-    max-width: 100%;
-    width: 50px;
-  }
-  
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 70px 0 0;
+  margin-bottom: 200px;
+}
+
+.skills-titulo h2 {
+  margin: 30px 0 70px;
+  font-weight: 600;
+  color: #222222;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.skills-img{
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  gap: 30px;
+}
   /** PROYECTOS */
   
   .container{
@@ -227,6 +205,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
   }
   
    /** telefono */
@@ -275,7 +254,7 @@
   
   .foter {
     width: 100%;
-    margin-bottom: 0;
+    margin: 0;
   }
   
   .foter-tit {
@@ -283,13 +262,13 @@
   }
   
   .foter-tit h2 {
-    font-size: 25px;
+    font-size: 20px;
     color: #161616;
   }
   
   .foter-tit h3 {
     color: #333232;
-    font-size: 20px;
+    font-size: 15px;
   }
   
   }
