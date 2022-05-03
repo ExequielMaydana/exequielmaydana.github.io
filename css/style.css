@@ -14,11 +14,11 @@ body {
 .header {
   display: flex;
   justify-content: flex-end;
-  height: 70px;
   position: fixed;
+  height: 70px;
   width: 100%;
-  background-color: rgb(227, 229, 233);
-  box-shadow: 1px 0 7px 2px #5D3BEF;
+  background-color: #fff;
+  box-shadow: 1px 0 7px 2px #8E7BEF;
 }
 
 .nav{
@@ -37,7 +37,7 @@ body {
   list-style: none;
 }
 .nav-menu-item{
-  margin: 0 10px;
+  margin: 0 20px;
   text-transform: uppercase;
   width: max-content;
 }
@@ -53,12 +53,12 @@ body {
 }
 
 .nav-menu-link{
-  padding: 3px;
+  padding: 5px;
   border-radius: 3px;
 }
 
 .nav-menu-link:hover{
-  background-color: #000000;
+  background-color: #8E7BEF;
   color: rgb(255, 255, 255);
   transition: 0.5s;
 }
@@ -82,48 +82,59 @@ body {
   justify-content: center;
   align-items: center;
   padding: 70px 0 0;
-  margin-bottom: 200px;
-  max-width: 100%;
+  width: 100%;
 }
 
-.home-img img{
-  width: 500px;
-  max-width: 100%;
+.home-foto{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
 }
 
 .home-quiensoy{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  display: inline-block;
+  width: 50%;
 }
 
 .home-quiensoy h1{
   margin: 0 0 20px;
   color: #222222;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .home-quiensoy p{
-  margin: 0 0 40px;
+  margin: 0 0 30px;
   color: #423F40;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 1.8rem;
 }
 
-.quiensoy-img a{
+.quiensoy-container-icon{
+  display: flex;
+  display: block;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.quiensoy-container-icon a{
   text-decoration: none;
-  display: inline-block;
-  margin: 0 20px 40px
+  margin-right: 50px;
 }
 
-.quiensoy-img img{
-  padding: 3px;
-  border-radius: 10px;
-  background-color: #5f73e7;
+.quiensoy-container-icon img{
+  width: 40px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #8E7BEF;
   box-shadow: 3px 3px 5px #000000;
+}
+
+.download-cv{
   max-width: 100%;
+  display: block;
 }
 
 .download-cv i {
@@ -132,15 +143,12 @@ body {
 }
 
 .download-cv a{
-  padding: 10px 60px;
-  background-color: #5f73e7;
+  display: inline-block;
+  padding: 15px 90px;
+  background-color: #5D3BEF;
   box-shadow: 3px 3px 5px #000000;
-  border-radius: 5px;
-  border: none;
-  color: #fff;
   text-decoration: none;
-  cursor: pointer;
-  max-width: 100%;
+  color: #fff;
 }
 
 /** MI CARRERA COMO DESARROLLADOR */
@@ -148,19 +156,20 @@ body {
 .carrera {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  padding: 90px 0 0;
-  margin-bottom: 200px;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+  padding: 70px 0 0;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 .carrera h2{
-  margin: 50px 0 50px;
+  margin: 5% 0 50px;
   letter-spacing: 3px;
-  font-weight: 600;
+  font-weight: bold;
   color: #222222;
-  font-size: 40px;
+  font-size: 3rem;
 }
 
 .carrera-text{
@@ -170,7 +179,7 @@ body {
 
 .carrera-text p {
   color: #423F40;
-  font-size: 20px;
+  font-size: 1.5rem;
   max-width: 100%;
 }
 
@@ -182,25 +191,30 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 90px 0 0;
-  margin-bottom: 200px;
+  padding: 70px 0 0;
+  margin-bottom: 100px;
+  width: 100%;
 }
 
 .skills-titulo h2 {
-  letter-spacing: 3px;
-  margin: 40px 0 70px;
-  font-weight: 600;
+  margin: 30% 0 100px;
+  font-weight: bold;
   color: #222222;
-  font-size: 40px;
+  font-size: 3rem;
   letter-spacing: 3px;
 }
 
 .skills-img{
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  max-width: 90%;
-  gap: 30px;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.skills-img img{
+  max-width: 100%;
+  margin: 0 10px;
 }
 
 /** PROYECTOS */
@@ -211,21 +225,27 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 90px 0 0;
-  margin-bottom: 200px;
+  padding: 70px 0 0;
+  margin-bottom: 100px;
 }
 
 .container-tit h3{
-  margin: 50px 0 50px;
-  font-size: 40px;
+  margin: 20% 0 25%;
+  font-size: 3rem;
   color: #222222;
   letter-spacing: 3px;
 }
 
 .container-proyecto{
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  gap: 20px;
+  width: 100%;
+}
+
+.container-proyecto img{
+  max-width: 100%;
+  margin: 0 10px;
 }
 
 
@@ -237,86 +257,92 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 90px 0 0;
-  margin-bottom: 300px;
+  padding: 70px 0 0;
+  margin-bottom: 200px;
 }
 
 .contacto-tit h2{
-  margin: 50px 0 80px;
-  font-weight: 600;
+  margin: 30% 0 50%;
+  font-weight: bold;
   color: #222222;
-  font-size: 40px;
+  font-size: 3rem;
 }
 
 .contacto-contactar{
   display: flex;
+  justify-content: center;
   flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 
  /** telefono */
 .contactar-card1{
   width: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin-right: 70px;
 }
 
 .contactar-card1 img{
-  width: 50px;
+  width: 70px;
   padding: 40px;
   background-color: #f9f5f2;
-  border-radius: 40px;
+  border-radius: 25%;
   max-width: 100%;
   margin-bottom: 10px;
 }
 
 .contactar-card1 h3{
   margin: 0 0 10px;
-  font-weight: 600;
+  font-weight: bold;
   color: #222222;
+  font-size: 1.5rem;
 }
 
 .contactar-card1 p {
   color: #423F40;
+  font-size: 1.3rem;
 }
 
  /** Email */
 .contactar-card2{
   width: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .contactar-card2 img{
-  width: 50px;
+  width: 70px;
   padding: 40px;
-  background-color: #f9f5f2;
-  border-radius: 40px;
-  max-width: 100%;
   margin-bottom: 10px;
+  background-color: #f9f5f2;
+  border-radius: 25%;
+  max-width: 100%;
 }
 
 .contactar-card2 h3 {
-  font-weight: 600;
+  font-weight: bold;
   color: #222222;
   margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .contactar-card2 p{
   color: #423F40;
+  font-size: 1.3rem;
 }
 
 /** FOOTER */
 
 .foter {
   width: 100%;
-  margin-bottom: 0;
   padding: 10px 0 0;
-  background-color: rgb(227, 229, 233);
-  box-shadow: 0 -2px 9px 2px #5D3BEF;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 1px 0 7px 2px #8E7BEF;
 }
 
 .foter-tit {
@@ -324,12 +350,11 @@ body {
 }
 
 .foter-tit h2 {
-  font-size: 30px;
+  font-size: 2rem;
   color: #161616;
-  margin-bottom: 5px;
 }
 
 .foter-tit h3 {
   color: #333232;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
