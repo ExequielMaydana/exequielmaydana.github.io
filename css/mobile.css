@@ -96,6 +96,7 @@
   .mobile-container-img img {
     max-width: 80%;
     margin-top: -70px;
+    z-index: -1;
   }
 
   .img-icon {
