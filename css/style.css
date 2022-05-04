@@ -76,31 +76,30 @@ body {
 }
 
 /** INICIO */
+.container-mobile{
+  display: none;
+}
 
 .home{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 70px 0 0;
-  width: 100%;
 }
 
 .home-foto{
   display: flex;
   justify-content: flex-end;
-  width: 50%;
 }
 
 .home-quiensoy{
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: center;
   flex-direction: column;
-  width: 50%;
 }
 
 .home-quiensoy h1{
-  margin: 0 0 20px;
+  margin: 0 0 30px;
   color: #222222;
   font-size: 2.5rem;
   font-weight: bold;
@@ -214,7 +213,6 @@ body {
 
 .skills-img img{
   max-width: 100%;
-  margin: 0 10px;
 }
 
 /** PROYECTOS */
