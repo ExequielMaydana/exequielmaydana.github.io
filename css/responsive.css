@@ -1,0 +1,579 @@
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .header {
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 0 7px 2px #5d3bef;
+    z-index: 99999;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(93, 109, 126);
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav-menu-item {
+    margin-top: 60px;
+    font-size: 1.5rem;
+  }
+
+  .nav-menu-link:hover {
+    background: none;
+    color: #fff;
+  }
+
+  .nav-toggle {
+    line-height: 55px;
+    display: block;
+  }
+
+  .nav-toggle i {
+    color: rgb(8, 8, 8);
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  /*para que solo aparezcan bordes si me muevo con tab*/
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* HOME */
+
+  .home {
+    display: none;
+  }
+
+  .home-md {
+    display: grid;
+    grid-template-columns: 2fr;
+    width: 100%;
+    padding: 50px 0 0 0;
+
+    display: flex;
+  }
+
+  .home-foto {
+    width: 50%;
+  }
+
+  .home-foto img {
+    max-width: 100%;
+  }
+
+  .home-info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .home-info h1 {
+    font-size: 2.5rem;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+  }
+
+  .home-info p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+  }
+
+  .info-icon {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 0 0 20px 0;
+  }
+
+  .info-icon a {
+    text-decoration: none;
+    background-color: #8e7bef;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .info-icon i {
+    font-size: 1.2rem;
+    padding: 5px;
+    color: #fff;
+  }
+
+  .info-download-cv {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .info-download-cv i {
+    margin-right: 10px;
+  }
+
+  .info-download-cv a {
+    background-color: #5d3bef;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  /* SOBRE MI */
+
+  .carrera {
+    padding: 40px 0 0 0;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .carrera h2 {
+    margin: 10% 0 5% 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .carrera-text p {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  /* HABILIDADES */
+
+  .skills {
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .skills h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10% 0 5% 0;
+  }
+
+  .skills-img {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .skills-img img {
+    max-width: 100%;
+  }
+
+  /* PROYECTOS */
+
+  .container {
+    padding: 50px 0 0 0;
+    margin-bottom: 50px;
+  }
+
+  .container h3 {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+
+  .container-proyecto {
+    max-width: 100%;
+    margin-top: -20%;
+    display: flex;
+    flex-direction: row;
+
+    gap: 5px;
+  }
+
+  .container-proyecto .proyecto img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* CONTACTO */
+
+  .container-contacto {
+    padding: 50px 0 0 0;
+    width: 100%;
+  }
+
+  .container-contacto h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 20% 0 5% 0;
+  }
+
+  .contacto-contactar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .contactar-card1 {
+    width: 200px;
+    margin: 0;
+  }
+
+  .contactar-card1 img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .contactar-card1 h3 {
+    font-size: 1rem;
+  }
+
+  .contactar-card1 p {
+    font-size: 1rem;
+  }
+
+  .contactar-card2 img {
+    width: 50px;
+  }
+
+  .contactar-card2 h3 {
+    font-size: 1rem;
+  }
+
+  .contactar-card2 p {
+    font-size: 1rem;
+  }
+
+  .foter-tit h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .foter-tit h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1400px){
+
+  body {
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .nav button {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 0 7px 2px #8E7BEF;
+  }
+
+  .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1442px;
+  }
+
+  .nav-menu {
+    display: contents;
+    margin-right: 20px;
+    list-style: none;
+  }
+
+  .nav-menu-item {
+    margin: 0 20px;
+    width: max-content;
+    font-size: 1rem;
+  }
+
+  .fa-solid{
+    color: #222222;
+  }
+
+  .nav-menu-link{
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  .nav-menu-link:hover{
+    background-color: #8E7BEF;
+    color: #fff;
+    transition: 0.5s;
+  }
+  
+
+  /** HEADER Y NAV */
+
+
+  /* HOME */
+
+  .home {
+    display: none;
+  }
+
+  .home-md {
+    display: grid;
+    grid-template-columns: 2fr;
+    width: 100%;
+    padding: 60px 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-foto {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .home-foto img {
+    max-width: 100%;
+  }
+
+  .home-info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .home-info h1 {
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+  }
+
+  .home-info p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+  }
+
+  .info-icon {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin: 0 0 40px 0;
+  }
+
+  .info-icon a {
+    text-decoration: none;
+    background-color: #8e7bef;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+    color: #fff;
+  }
+
+  .info-icon i {
+    font-size: 2rem;
+    padding: 5px;
+    color: #fff;
+  }
+
+  .info-download-cv {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .info-download-cv i {
+    margin-right: 10px;
+    color: #fff;
+  }
+
+  .info-download-cv a {
+    background-color: #5d3bef;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 70px;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  /* SOBRE MI */
+
+  .carrera {
+    padding: 60px 0 0 0;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carrera h2 {
+    margin: 5% 0 5% 0;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .carrera-text {
+    max-width: 90%;
+  }
+
+  .carrera-text p {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  /* HABILIDADES */
+
+  .skills {
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 10% 0;
+  }
+
+  .skills h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 7% 0 5% 0;
+  }
+
+  .skills-img {
+    width: 100%;
+  }
+
+  .skills-img img {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  /* PROYECTOS */
+
+  .container {
+    padding: 60px 0 0 0;
+    margin-bottom: 50px;
+  }
+
+  .container h3 {
+    margin: 5% 0 3% 0;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  .container-proyecto {
+    max-width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+
+    gap: 30px;
+  }
+
+  .container-proyecto .proyecto img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* CONTACTO */
+
+  .container-contacto {
+    padding: 60px 0 0 0;
+    width: 100%;
+    margin-bottom: 20%;
+  }
+
+  .container-contacto h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 10% 0 5% 0;
+  }
+
+  .contacto-contactar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  .contactar-card1 {
+    width: 300px;
+    margin: 0;
+  }
+
+  .contactar-card1 img {
+    width: 70px;
+    margin-bottom: 10px;
+  }
+
+  .contactar-card1 h3 {
+    font-size: 1.2rem;
+  }
+  
+  .contactar-card2 {
+    width: 300px;
+  }
+
+  .contactar-card2 img {
+    width: 70px;
+  }
+
+  .contactar-card2 h3 {
+    font-size: 1.2rem;
+  }
+
+
+    /* FOOTER */
+
+  .foter-tit h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .foter-tit h3 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+}

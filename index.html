@@ -40,7 +40,7 @@
     <!--Unimos html con css-->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
 
     <script src="./js/coding.js" defer></script>
 
@@ -53,15 +53,16 @@
       <!--NAVBAR-->
 
       <nav class="nav">
-        <!--agregamos un aria-label para las personas con discapacidad-->
 
+        <!--agregamos un aria-label para las personas con discapacidad-->
         <button class="nav-toggle" aria-label="Abrir menu">
           <i class="fa-solid fa-bars"></i>
         </button>
+        
         <ul class="nav-menu">
           <li class="nav-menu-item">
             <i class="fa-solid fa-house"></i>
-            <a href="#homee" class="nav-menu-link nav-link">Home</a>
+            <a href="#home" class="nav-menu-link nav-link">Home</a>
           </li>
           <li class="nav-menu-item">
             <i class="fa-solid fa-user"></i>
@@ -84,96 +85,81 @@
     </header>
 
     <main>
-      <!--INICIO-->
+      <!--INICIO Movil-->
 
-      <div class="home" id="homee">
-        <div class="home-foto">
-          <img img src="./assets/images/inicio.png" alt="image" />
-        </div>
+      <div class="home" id="home">
 
         <div class="home-quiensoy">
-          <h1>Exequiel Maydana</h1>
-          <p>Desarrollador Web Full-Stack</p>
-
-          <div class="quiensoy-container-icon">
-            <a
-              href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/"
-              target="_blank"
-            >
-              <img
-                src="./assets/icon-contact/linkedinn.svg"
-                alt="logo-linkedin"
-              />
-            </a>
-            <a href="https://www.instagram.com/exe_m666/" target="_blank">
-              <img
-                src="./assets/icon-contact/instagramaa.svg"
-                alt="logo-insta"
-              />
-            </a>
-            <a href="https://twitter.com/ExeBikerr" target="_blank">
-              <img
-                src="./assets/icon-contact/twitterr.svg"
-                alt="logo-twitter"
-              />
-            </a>
-          </div>
-
-          <div class="download-cv">
-            <a download="cv" href="./assets/cv.pdf">
-              <i class="fa-solid fa-envelope"></i>
-              Contáctame
-            </a>
-          </div>
-        </div>
-      </div>
-      <!--MOBILE-->
-      <div class="container-mobile">
           <h1>Exequiel<br>Maydana</h1>
           <p>Desarrollador fullstack apasionado,<br>
             proactivo y ambicioso.
           </p>
-        <div class="mobile-container-img">
 
-          <img img src="./assets/images/inicio.png" alt="image" />
+          <div class="quiensoy-container-img">
+            <div class="img-foto">
+              <img img src="./assets/images/inicio.png" alt="image" />
+            </div>
 
-          <div class="img-icon">
-            <a
-              href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/"
-              target="_blank"
-            >
-              <img
-                src="./assets/icon-contact/linkedinn.svg"
-                alt="logo-linkedin"
-              />
+            <div class="img-icon">
+            <a href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="https://www.instagram.com/exe_m666/" target="_blank">
-              <img
-                src="./assets/icon-contact/instagramaa.svg"
-                alt="logo-insta"
-              />
+              <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="https://twitter.com/ExeBikerr" target="_blank">
-              <img
-                src="./assets/icon-contact/twitterr.svg"
-                alt="logo-twitter"
-              />
+              <i class="fa-brands fa-twitter"></i>
             </a>
           </div>
+          <div class="download-cv">
+            <a download="cv" href="./assets/cv.pdf">
+              <i class="fa-solid fa-download"></i>
+              Download CV
+            </a>
           </div>
 
-        <div class="mobile-download-cv">
-            <a download="cv" href="./assets/cv.pdf">
-              <i class="fa-solid fa-envelope"></i>
-              Contáctame
+        </div>
+        </div>
+
+      </div>
+
+      <!--HOME TABLETyDESKTOP-->
+      <div class="home-md" id="home">
+
+        <div class="home-foto">
+          <img img src="./assets/images/inicio.png" alt="image" />
+        </div>
+
+        <div class="home-info">
+          <h1>Exequiel<br>Maydana</h1>
+          <p>Desarrollador fullstack apasionado,<br>
+            proactivo y ambicioso.
+          </p>
+          <div class="info-icon">
+            <a href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/exe_m666/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/ExeBikerr" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
             </a>
           </div>
+          <div class="info-download-cv">
+            <a download="cv" href="./assets/cv.pdf">
+              <i class="fa-solid fa-download"></i>
+              Download CV
+            </a>
+          </div>
+        </div>
+
       </div>
 
       <!--SOBRE MI CARRERA COMO DESARROLLADOR-->
 
       <div class="carrera" id="sobremi">
-        <h2>About me</h2>
+        <h2>Sobre mi</h2>
         <div class="carrera-text">
           <p>
             Actualmente (2022) me encuentro estudiando una Tec. En Desarrollo
@@ -193,53 +179,50 @@
         </div>
       </div>
 
+
       <!--Mis SKILLS-->
 
       <div class="skills" id="skill">
-        <div class="skills-titulo">
-          <h2>Mis Skills</h2>
-        </div>
+          <h2>Mis Habilidades</h2>
         <div class="skills-img">
           <img src="./assets/icon-skill-tools/piton.png" alt="logopython" />
           <img src="./assets/icon-skill-tools/servidor-sql.png" alt="logosql" />
           <img src="./assets/icon-skill-tools/html-5.png" alt="logohtml" />
           <img src="./assets/icon-skill-tools/css.png" alt="logocss" />
-          <img
-            src="./assets/icon-skill-tools/js.png"
-            alt="logojavascript"
-            width="100"
-          />
+          <img src="./assets/icon-skill-tools/js.png" alt="logojavascript" width="100"/>
           <img src="./assets/icon-skill-tools/nodejs.png" alt="logonodejs" />
           <img src="./assets/icon-skill-tools/react.png" alt="logoreact" />
           <img src="./assets/icon-skill-tools/github.png" alt="logogit" />
         </div>
-      </div>
+      </div> 
 
       <!--PORTFOLIO-->
 
       <div class="container" id="portfolio">
-        <div class="container-tit">
+
           <h3>Portafolio</h3>
-        </div>
+  
         <div class="container-proyecto">
-          <div class="proyecto-1">
-            <img src="./assets/proyectos/Rectangle59.jpg" alt="e-comer" />
+          <div class="proyecto">
+            <img src="./assets/proyectos/Rectangle59.jpg" alt="e-comer"/>
           </div>
-          <div class="proyecto-2">
+          <div class="proyecto">
             <img src="./assets/proyectos/Rectangle48.jpg" alt="web" />
           </div>
-          <div class="proyecto-3">
+          <div class="proyecto">
             <img src="./assets/proyectos/Rectangle49.jpg" alt="web2" />
           </div>
         </div>
       </div>
 
+
       <!--CONTACTO-->
       <div class="container-contacto" id="contacto">
-        <div class="contacto-tit">
+
           <h2>Contacto</h2>
-        </div>
+
         <div class="contacto-contactar">
+          
           <div class="contactar-card1">
             <img src="./assets/icon-contact/phone3.svg" alt="logophone" />
             <h3>Numero celular</h3>
@@ -250,11 +233,12 @@
             <h3>Email</h3>
             <p>maydanarkt@gmail.com</p>
           </div>
+          
         </div>
       </div>
     </main>
 
-    <!--FOOTERr-->
+    <!--FOOTER-->
 
     <footer class="foter">
       <div class="foter-tit">
