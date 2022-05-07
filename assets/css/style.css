@@ -98,6 +98,8 @@ body {
   font-weight: 600;
   color: #000000;
   text-shadow: 2px 4px 3px #7f799b;
+
+  animation-iteration-count: 3;
 }
 
 .home-quiensoy p {
