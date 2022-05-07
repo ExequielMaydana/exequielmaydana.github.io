@@ -35,12 +35,12 @@
     />
 
     <!--unimos html con la hora de estilos normalize-->
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
 
     <!--Unimos html con css-->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css"/>
 
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <script src="./js/coding.js" defer></script>
 
@@ -49,34 +49,34 @@
   <body>
     <!--HEADER-->
 
-    <header class="header">
+    <header class="header header-xl">
       <!--NAVBAR-->
 
-      <nav class="nav">
+      <nav class="nav nav-xl">
 
         <!--agregamos un aria-label para las personas con discapacidad-->
         <button class="nav-toggle" aria-label="Abrir menu">
           <i class="fa-solid fa-bars"></i>
         </button>
         
-        <ul class="nav-menu">
-          <li class="nav-menu-item">
+        <ul class="nav-menu nav-menu-xl">
+          <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-house"></i>
-            <a href="#home" class="nav-menu-link nav-link">Home</a>
+            <a href="#home" class="nav-menu-link nav-link nav-link-home">Home</a>
           </li>
-          <li class="nav-menu-item">
+          <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-user"></i>
             <a href="#sobremi" class="nav-menu-link nav-link">Acerca de mi</a>
           </li>
-          <li class="nav-menu-item">
+          <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-laptop-code"></i>
             <a href="#skill" class="nav-menu-link nav-link">Mis habilidades</a>
           </li>
-          <li class="nav-menu-item">
+          <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-diagram-project"></i>
             <a href="#portfolio" class="nav-menu-link nav-link">Portafolio</a>
           </li>
-          <li class="nav-menu-item">
+          <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-envelope"></i>
             <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
           </li>
@@ -86,7 +86,6 @@
 
     <main>
       <!--INICIO Movil-->
-
       <div class="home" id="home">
 
         <div class="home-quiensoy">
@@ -123,8 +122,9 @@
 
       </div>
 
-      <!--HOME TABLETyDESKTOP-->
-      <div class="home-md" id="home">
+      <!--HOME TABLET y DESKTOP-->
+
+      <div class="home-md">
 
         <div class="home-foto">
           <img img src="./assets/images/inicio.png" alt="image" />
