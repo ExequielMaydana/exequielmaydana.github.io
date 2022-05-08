@@ -1,16 +1,34 @@
 body {
   background-color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-family: var(--fuente);
+  font-size: 1.2rem;
   font-weight: 400;
+}
+
+:root {
+  --azul-claro: #8E7BEF;
+  --azul: #5D3BEF;
+  --color-menu: #F9F6FF;
+  --color-body: #FFFFFF;
+  --color-titulos: #000000;
+  --color-subtitulos: #423F40;
+  --color-card-contacto: #F9F5F2;
+
+  --fuente: "Montserrat", sans-serif;
+  --font-size-titulos: 2rem;
+  --font-size-subtitulos: 1.5
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 .header {
   height: 40px;
   position: fixed;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 1px 0 7px 2px #5d3bef;
+  background-color: var(--color-menu);
+  box-shadow: 1px 0 7px 2px var(--color1);
   z-index: 99999;
 }
 
@@ -30,7 +48,7 @@ body {
 }
 
 .nav-toggle i {
-  color: #000000;
+  color: var(--color-titulos);
   font-size: 2rem;
 }
 
@@ -98,8 +116,6 @@ body {
   font-weight: 600;
   color: #000000;
   text-shadow: 2px 4px 3px #7f799b;
-
-  animation-iteration-count: 3;
 }
 
 .home-quiensoy p {
@@ -177,7 +193,7 @@ body {
 }
 
 .carrera h2 {
-  margin: 20% 0 10%;
+  margin: 20% 0 5%;
   font-size: 2rem;
   font-weight: 600;
   color: #000000;
@@ -210,7 +226,7 @@ body {
 .skills h2 {
   font-size: 2rem;
   font-weight: 600;
-  margin: 20% 0 30%;
+  margin: 20% 0 10%;
   color: #000000;
   text-shadow: 2px 4px 3px #7f799b;
 }
@@ -231,7 +247,7 @@ body {
 .container h3 {
   font-size: 2rem;
   font-weight: 600;
-  margin: 20% 0 30%;
+  margin: 20% 0 10%;
   color: #000000;
   text-shadow: 2px 4px 3px #7f799b;
 }
