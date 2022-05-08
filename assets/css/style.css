@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: var(--color-white);
   font-family: var(--fuente);
   font-size: 1.2rem;
   font-weight: 400;
@@ -9,14 +9,14 @@ body {
   --azul-claro: #8E7BEF;
   --azul: #5D3BEF;
   --color-menu: #F9F6FF;
-  --color-body: #FFFFFF;
+  --color-white: #FFFFFF;
   --color-titulos: #000000;
   --color-subtitulos: #423F40;
   --color-card-contacto: #F9F5F2;
 
   --fuente: "Montserrat", sans-serif;
-  --font-size-titulos: 2rem;
-  --font-size-subtitulos: 1.5
+  --font-titulos:  2rem;
+  --font-subtitulos: 1.3rem;
 }
 
 html{
@@ -30,49 +30,50 @@ html{
   background-color: var(--color-menu);
   box-shadow: 1px 0 7px 2px var(--color1);
   z-index: 99999;
+  box-shadow: 0px 3px 7px #5d3bef;
 }
 
 .nav {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  
   text-align: center;
 }
 
+
 .nav-toggle {
-  line-height: 50px;
-  margin-right: 10px;
   display: block;
   border: none;
   background: none;
 }
 
 .nav-toggle i {
+  line-height: 40px;
   color: var(--color-titulos);
-  font-size: 2rem;
+  font-size: 1.7rem;
+  cursor: pointer;
 }
 
 .nav-menu {
   flex-direction: column;
-  background-color: #5d6d7e;
+  background-color: #2E4053;
   position: fixed;
-  left: 0;
   top: 20px;
   width: 100%;
-  height: calc(100% - 20px);
+  height: calc(100% - 40px);
   overflow-y: auto;
   left: 100%;
   transition: left 0.3s;
 }
 
+.nav-menu-item {
+  margin: 10% 15% 0 0;
+  list-style: none;
+}
+
 .nav-link {
   text-decoration: none;
   color: #000000;
-}
-
-.nav-menu-item {
-  margin: 10% 20% 0 0;
-  list-style: none;
 }
 
 .nav-menu-link:hover {
@@ -88,21 +89,23 @@ html{
   outline: none;
 }
 
-.home-md{
+/*este es el home de tablet y desktop*/
+.home-xl{
   display: none;
 }
+
+
+
 
 /* HOME */
 
 .home {
-  display: grid;
-  grid-template-rows: repeat(3fr);
   padding: 40px 0 0;
   margin-bottom: 50px;
   width: 100%;
 }
 
-.home-quiensoy {
+.home-title {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -110,24 +113,24 @@ html{
   max-width: 100%;
 }
 
-.home-quiensoy h1 {
+.home-title h1 {
   margin: 5px 0 10px 10px;
-  font-size: 2rem;
+  font-size: var(--font-titulos);
   font-weight: 600;
-  color: #000000;
+  color: var(--color-titulos);
   text-shadow: 2px 4px 3px #7f799b;
 }
 
-.home-quiensoy p {
+.home-title p {
   margin: 0 0 0 10px;
-  font-size: 1.2rem;
+  font-size: var(--font-subtitulos);
   font-weight: 600;
   z-index: 1;
-  color: #222222;
+  color: var(--color-subtitulos);
 }
 
-.quiensoy-container-img {
-  max-width: 100%;
+.home-container-img {
+  width: 100%;
   margin-top: -15%;
   display: flex;
   flex-direction: column;
@@ -150,7 +153,7 @@ html{
 
 .img-icon a {
   text-decoration: none;
-  background-color: #8E7BEF;
+  background-color: var(--azul-claro);
   padding: 5px;
   border-radius: 50%;
   cursor: pointer;
@@ -164,18 +167,18 @@ html{
   padding: 5px;
 }
 
-.download-cv {
+.home-download-cv {
   display: flex;
   justify-content: center;
   text-align: center;
   width: 100%;
 }
 
-.download-cv a {
+.home-download-cv a {
   max-width: 100%;
   padding: 10px 60px;
   text-decoration: none;;
-  background-color: #5d3bef;
+  background-color: var(--azul);
   color: #fff;
   box-shadow: 3px 3px 4px #000000;
 }
@@ -183,7 +186,7 @@ html{
 
 /* SOBRE MI */
 
-.carrera {
+.sobre-mi {
   padding: 40px 0;
   display: flex;
   flex-direction: column;
@@ -192,23 +195,24 @@ html{
   margin: 0;
 }
 
-.carrera h2 {
-  margin: 20% 0 5%;
-  font-size: 2rem;
+.sobre-mi h2 {
+  margin: 10% 0 5%;
+  font-size: var(--font-titulos);
   font-weight: 600;
-  color: #000000;
+  color: var(--color-titulos);
   text-shadow: 2px 4px 3px #7f799b;
 }
 
-.carrera-text {
-  max-width: 100%;
+.sobre-mi-text {
+  width: 100%;
 }
 
-.carrera-text p {
+.sobre-mi-text p {
   font-size: 1rem;
   font-weight: 600;
-  width: 100%;
-  color: #222222;
+  max-width: 100%;
+  color: var(--color-subtitulos);
+  margin: 0;
 }
 
 /* HABILIDADES */
@@ -220,20 +224,19 @@ html{
   justify-content: center;
   text-align: center;
   width: 100%;
-  margin-bottom: 30px;
 }
 
 .skills h2 {
-  font-size: 2rem;
+  font-size: var(--font-titulos);
   font-weight: 600;
   margin: 20% 0 10%;
-  color: #000000;
+  color: var(--color-titulos);
   text-shadow: 2px 4px 3px #7f799b;
 }
 
 /* PROYECTOS */
 
-.container {
+.proyectos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,27 +247,28 @@ html{
   margin-bottom: 30px;
 }
 
-.container h3 {
-  font-size: 2rem;
+.proyectos h3 {
+  font-size: var(--font-titulos);
   font-weight: 600;
-  margin: 20% 0 10%;
-  color: #000000;
+  margin: 0 0 10% 0;
+  color: var(--color-titulos);
   text-shadow: 2px 4px 3px #7f799b;
 }
 
-.container-proyecto {
-  max-width: 100%;
+.proyectos-img {
+  max-width: 90%;
   display: flex;
   flex-direction: column;
 }
 
-.container-proyecto .proyecto img{
+.proyectos-img img {
   max-width: 100%;
+  box-shadow: 2px 2px 6px #000000;
 }
 
 /* CONTACTO */
 
-.container-contacto {
+.contacto {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,11 +279,11 @@ html{
   width: 100%;
 }
 
-.container-contacto h2 {
+.contacto h2 {
   margin: 20% 0 20%;
-  font-size: 2rem;
+  font-size: var(--font-titulos);
   font-weight: 600;
-  color: #000000;
+  color: var(--color-titulos);
   text-shadow: 2px 4px 3px #7f799b;
 }
 
@@ -288,55 +292,35 @@ html{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
   gap: 20px;
 }
 
-.contactar-card1 {
+.contactar-card {
   max-width: 100%;
 }
 
-.contactar-card1 img {
+.contactar-card img {
   max-width: 100%;
   padding: 30px;
-  background-color: #F9F5F2;
+  background-color: var(--color-card-contacto);
   border-radius: 25%;
   margin-bottom: 10px;
   box-shadow: 3px 3px 4px #000000;
 } 
 
-.contactar-card1 h3 {
+.contactar-card h3 {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #000000;
+  color: var(--color-titulos);
+  margin: 0 0 5px 0;
 }
 
-.contactar-card1 p {
-  color: #222222;
-}
-
-.contactar-card2 {
-  max-width: 100%;
-}
-
-.contactar-card2 img {
-  max-width: 100%;
-  padding: 30px;
-  background-color: #F9F5F2;
-  border-radius: 25%;
-  margin-bottom: 10px;
-  box-shadow: 3px 3px 4px #000000;
-}
-
-.contactar-card2 h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.contactar-card2 p {
-  color: #222222;
+.contactar-card p {
+  color: var(--color-subtitulos);
+  font-weight: 400;
+  margin: 0;
 }
 
 /* FOTER */
@@ -344,7 +328,7 @@ html{
 .foter {
   width: 100%;
   bottom: 0;
-  background-color: #fff;
+  background-color:var (--color-menu);
   box-shadow: 1px 0 7px 2px #5d3bef;
 }
 
@@ -360,7 +344,7 @@ html{
 .foter-tit h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #000000;
+  color: var(--color-titulos);
   text-shadow: 2px 4px 3px #7f799b;
   margin: 0 0 10px 0;
 }
@@ -368,6 +352,6 @@ html{
 .foter-tit h3 {
   font-size: 1rem;
   font-weight: 400;
-  color: #222222;
+  color: var(--color-subtitulos);
   margin: 0 0 5px 0;
 }

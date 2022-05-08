@@ -1,10 +1,25 @@
 @media (min-width: 481px) and (max-width: 768px) {
   body {
-    background-color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    background-color: var(--color-white);
+    font-family: var(--fuente);
+    font-size: 1rem;
     font-weight: 400;
   }
+
+  :root {
+    --azul-claro: #8E7BEF;
+    --azul: #5D3BEF;
+    --color-menu: #F9F6FF;
+    --color-white: #FFFFFF;
+    --color-titulos: #000000;
+    --color-subtitulos: #423F40;
+    --color-card-contacto: #F9F5F2;
+  
+    --fuente: "Montserrat", sans-serif;
+    --font-titulos: 2.5rem;
+    --font-subtitulos: 1.3rem;
+  }
+  
 
   .header-xl {
     height: 50px;
@@ -32,7 +47,7 @@
 
   .nav-menu-item-xl {
     margin: 50px 0 0 0;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   .nav-menu-link:hover {
@@ -60,15 +75,12 @@
     outline: none;
   }
 
-  /* HOME */
-
+  /*este es el home de movíl*/
   .home {
     display: none;
   }
 
-  .home-md {
-    display: grid;
-    grid-template-columns: 2fr;
+  .home-xl {
     width: 100%;
     padding: 50px 0 0 0;
 
@@ -92,18 +104,19 @@
   }
 
   .home-info h1 {
-    font-size: 2.5rem;
+    font-size: var(--font-titulos);
     margin: 0 0 20px 0;
     font-weight: 600;
-    color: #000;
+    color: var(--color-titulos);
     text-shadow: 2px 4px 3px #7f799b;
+    letter-spacing: 5px;
   }
 
   .home-info p {
-    font-size: 1.2rem;
+    font-size: var(--font-subtitulos);
     font-weight: 600;
     margin: 0 0 15px 0;
-    color: #222222;
+    color: var(--color-subtitulos);
   }
 
   .info-icon {
@@ -117,19 +130,18 @@
 
   .info-icon a {
     text-decoration: none;
-    background-color: #8e7bef;
+    background-color: var(--azul-claro);
     border-radius: 50%;
     cursor: pointer;
-    padding: 5px;
     box-shadow: 3px 3px 4px #000000;
     margin: 0 15% 0 0;
-  }
+}
 
   .info-icon i {
-    font-size: 1.2rem;
-    padding: 5px;
+    font-size: 1.7rem;
     color: #fff;
-  }
+    padding: 10px;
+}
 
   .info-download-cv {
     display: flex;
@@ -143,10 +155,10 @@
   }
 
   .info-download-cv a {
-    background-color: #5d3bef;
-    color: #fff;
+    background-color: var(--azul);
+    color: var(--color-white);
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 50px;
     max-width: 100%;
     font-size: 1rem;
     box-shadow: 3px 3px 4px #000000;
@@ -154,22 +166,24 @@
 
   /* SOBRE MI */
 
-  .carrera {
+  .sobre-mi {
     padding: 40px 0 0 0;
     margin-bottom: 20px;
     width: 100%;
   }
 
-  .carrera h2 {
-    margin: 10% 0 5% 0;
-    font-size: 2.5rem;
+  .sobre-mi h2 {
+    margin: 10% 0 3% 0;
+    font-size: var(--font-titulos);
     font-weight: 600;
+    color: var(--color-titulos);
+    letter-spacing: 3px;
   }
 
-  .carrera-text p {
-    font-size: 1.2rem;
+  .sobre-mi-text p {
+    font-size: var(--font-subtitulos);
     font-weight: 600;
-    color: #222222;
+    color: var(--color-subtitulos);
   }
 
   /* HABILIDADES */
@@ -185,9 +199,10 @@
   }
 
   .skills h2 {
-    font-size: 2.5rem;
+    font-size: var(--font-titulos);
     font-weight: 600;
     margin: 10% 0 8% 0;
+    letter-spacing: 3px;
   }
 
   .skills-img {
@@ -201,81 +216,79 @@
 
   /* PROYECTOS */
 
-  .container {
+  .proyectos {
     padding: 50px 0 0 0;
-    margin-bottom: 12%;
+    margin-bottom: 0;
   }
 
-  .container h3 {
+  .proyectos h3 {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: var(--font-titulos);
     margin: 10% 0 7% 0;
+    letter-spacing: 3px;
   }
 
-  .container-proyecto {
+  .proyectos-img {
     max-width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    gap: 5px;
+
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .container-proyecto .proyecto img {
+  .proyectos-img img {
     max-width: 100%;
-    margin: 0;
+    margin: 0 0 20px 0;
+    box-shadow: 2px 2px 6px #000000;
   }
 
   /* CONTACTO */
 
-  .container-contacto {
+  .contacto {
     padding: 50px 0 0 0;
     width: 100%;
   }
 
-  .container-contacto h2 {
-    font-size: 2.5rem;
+  .contacto h2 {
+    font-size: var(--font-titulos);
     font-weight: 600;
-    margin: 7% 0 10% 0;
+    margin: 5% 0 10% 0;
+    color: var(--color-titulos);
+    letter-spacing: 3px;
   }
 
   .contacto-contactar {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
   }
 
-  .contactar-card1 {
-    width: 200px;
+  .contactar-card {
+    width: 250px;
     margin: 0;
   }
 
-  .contactar-card1 img {
-    width: 50px;
-    margin-bottom: 10px;
+  .contactar-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 
-  .contactar-card1 h3 {
-    font-size: 1rem;
+  .contactar-card p {
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 
-  .contactar-card1 p {
-    font-size: 1rem;
+  .contactar-card img {
+    width: 70px;
   }
 
-  .contactar-card2 img {
-    width: 50px;
-  }
-
-  .contactar-card2 h3 {
-    font-size: 1rem;
-  }
-
-  .contactar-card2 p {
-    font-size: 1rem;
-  }
+  
+  /* FOTER */
 
   .foter-tit h2 {
     font-size: 2rem;
@@ -290,15 +303,30 @@
 
 
 
-@media (min-width: 769px) and (max-width: 1400px){
+@media (min-width: 769px) and (max-width: 1442px){
 
   body {
-    background-color: #fff;
+    background-color: var(--color-white);
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
   }
 
+  :root {
+    --azul-claro: #8E7BEF;
+    --azul: #5D3BEF;
+    --color-menu: #F9F6FF;
+    --color-white: #FFFFFF;
+    --color-titulos: #000000;
+    --color-subtitulos: #423F40;
+    --color-card-contacto: #F9F5F2;
+  
+    --fuente: "Montserrat", sans-serif;
+    --font-titulos: 3rem;
+    --font-subtitulos: 2rem;
+  }
+  
+  /* el button amburguesa */
   .nav button {
     display: none;
   }
@@ -309,6 +337,8 @@
     align-items: center;
     position: fixed;
     height: 60px;
+    top: 0;
+    z-index: 999;
     width: 100%;
     background-color: #fff;
     box-shadow: 1px 0 7px 2px #8E7BEF;
@@ -356,25 +386,17 @@
     transition: 0.5s;
   }
   
-
-  /** HEADER Y NAV */
-
-
-  /* HOME */
-
+  /* este es el home movil */
   .home {
     display: none;
   }
 
-  .home-md {
-    display: grid;
-    grid-template-columns: 2fr;
+  /* aca comienza mi home desktop */
+
+  .home-xl {
+    display: flex;
     width: 100%;
     padding: 60px 0 0 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .home-foto {
@@ -396,94 +418,95 @@
   }
 
   .home-info h1 {
-    font-size: 3rem;
+    font-size: var(--font-titulos);
     margin: 0 0 20px 0;
     font-weight: 600;
-    color: #000;
+    color: var(--color-titulos);
     text-shadow: 2px 4px 3px #7f799b;
 
     animation-iteration-count: 3;
   }
 
   .home-info p {
-    font-size: 1.7rem;
+    font-size: var(--font-subtitulos);
     font-weight: 500;
-    margin: 0 0 15px 0;
-    color: #222222;
+    margin: 0 0 20px 0;
+    color: var(--color-subtitulos);
   }
 
   .info-icon {
     max-width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 60px;
-    margin: 0 0 40px 0;
+    margin: 0 0 30px 0 ;
   }
 
   .info-icon a {
     text-decoration: none;
-    background-color: #8e7bef;
+    background-color: var(--azul-claro);
     border-radius: 50%;
     cursor: pointer;
-    padding: 5px;
-    color: #fff;
+    padding: 10px;
+    color: var(--color-white);
     box-shadow: 3px 3px 4px #000000;
+    margin: 0 40% 0 0 ;
   }
 
   .info-icon i {
     font-size: 2rem;
-    padding: 5px;
-    color: #fff;
+    padding: 3px;
+    color: var(--color-white);
   }
 
   .info-download-cv {
     display: flex;
     align-items: flex-start;
-    width: 100%;
     text-align: center;
+    width: 100%;
   }
 
   .info-download-cv i {
     margin-right: 10px;
-    color: #fff;
+    color: var(--color-white);
   }
 
   .info-download-cv a {
-    background-color: #5d3bef;
-    color: #fff;
+    background-color: var(--azul);
+    color: var(--color-white);
     text-decoration: none;
     padding: 15px 80px;
     max-width: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     box-shadow: 3px 3px 4px #000000;
   }
 
   /* SOBRE MI */
 
-  .carrera {
+  .sobre-mi {
     padding: 60px 0 0 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 0 5% 0;
   }
 
-  .carrera h2 {
-    margin: 5% 0 2% 0;
-    font-size: 3rem;
+  .sobre-mi h2 {
+    margin: 7% 0 2% 0;
+    font-size: var(--font-titulos);
     font-weight: 600;
-    color: #000;
+    color: var(--color-titulos);
     text-shadow: 2px 4px 3px #7f799b;
   }
 
-  .carrera-text {
+  .sobre-mi-text {
     max-width: 90%;
   }
 
-  .carrera-text p {
-    font-size: 1.4rem;
+  .sobre-mi-text p {
+    font-size: 1.3rem;
     font-weight: 600;
-    color: #222222;
+    color: var(--color-subtitulos);
   }
 
   /* HABILIDADES */
@@ -495,14 +518,14 @@
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin: 0 0 5% 0;
+    margin: 0 0 8% 0;
   }
 
   .skills h2 {
-    font-size: 3rem;
+    font-size: var(--font-titulos);
     font-weight: 600;
     margin: 7% 0 5% 0;
-    color: #000;
+    color: var(--color-titulos);
     text-shadow: 2px 4px 3px #7f799b;
   }
 
@@ -517,46 +540,48 @@
 
   /* PROYECTOS */
 
-  .container {
+  .proyectos {
     padding: 60px 0 0 0;
     margin-bottom: 3%;
+    width: 100%;
   }
 
-  .container h3 {
-    margin: 5% 0 5% 0;
+  .proyectos h3 {
+    margin: 6% 0 5% 0;
     font-weight: 600;
-    font-size: 3rem;
-    color: #000;
+    font-size: var(--font-titulos);
+    color: var(--color-titulos);
     text-shadow: 2px 4px 3px #7f799b;
   }
 
-  .container-proyecto {
+  .proyectos-img {
     max-width: 100%;
-    margin-top: 0;
     display: flex;
     flex-direction: row;
 
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
 
-  .container-proyecto .proyecto img {
+  .proyectos-img img {
     max-width: 100%;
-    margin: 0;
+    box-shadow: 2px 2px 6px #000000;
   }
 
   /* CONTACTO */
 
-  .container-contacto {
+  .contacto {
     padding: 60px 0 0 0;
     width: 100%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 
-  .container-contacto h2 {
-    font-size: 3rem;
+  .contacto h2 {
+    font-size: var(--font-titulos);
     font-weight: 600;
-    margin: 5% 0 5% 0;
-    color: #000;
+    margin: 3% 0 5% 0;
+    color: var(--color-titulos);
     text-shadow: 2px 4px 3px #7f799b;
   }
 
@@ -569,34 +594,32 @@
     gap: 70px;
   }
 
-  .contactar-card1 {
+  .contactar-card {
     width: 300px;
     margin: 0;
   }
 
-  .contactar-card1 img {
+  .contactar-card img {
     width: 70px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
   }
 
-  .contactar-card1 h3 {
-    font-size: 1.2rem;
-  }
-  
-  .contactar-card2 {
-    width: 300px;
+  .contactar-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
   }
 
-  .contactar-card2 img {
-    width: 70px;
-  }
-
-  .contactar-card2 h3 {
-    font-size: 1.2rem;
+  .contactar-card p {
+    font-size: 1rem;
+    font-weight: 600;
   }
 
 
     /* FOOTER */
+
+  .foter{
+    width: 100%;
+  }
 
   .foter-tit h2 {
     font-size: 2rem;

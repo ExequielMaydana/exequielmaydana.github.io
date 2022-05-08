@@ -27,23 +27,26 @@
     ></script>
 
     <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!--ANIMACIONES CSS-->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!--unimos html con la hora de estilos normalize-->
     <link rel="stylesheet" href="./assets/css/normalize.css" />
 
     <!--Unimos html con css-->
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <title>PORTAFOLIO|Exequiel Maydana</title>
   </head>
@@ -54,16 +57,17 @@
       <!--NAVBAR-->
 
       <nav class="nav nav-xl">
-
         <!--agregamos un aria-label para las personas con discapacidad-->
         <button class="nav-toggle" aria-label="Abrir menu">
           <i class="fa-solid fa-bars"></i>
         </button>
-        
+
         <ul class="nav-menu nav-menu-xl">
           <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-house"></i>
-            <a href="#home" class="nav-menu-link nav-link nav-link-home">Home</a>
+            <a href="#home" class="nav-menu-link nav-link nav-link-home"
+              >Home</a
+            >
           </li>
           <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-user"></i>
@@ -86,58 +90,72 @@
     </header>
 
     <main>
-      <!--INICIO Movil-->
+      <!--Inicio Movil-->
       <div class="home" id="home">
 
-        <div class="home-quiensoy">
-          <h1>Exequiel<br>Maydana</h1>
-          <p>Desarrollador fullstack apasionado,<br>
+        <div class="home-title">
+          <h1>Exequiel<br />Maydana</h1>
+          <p>
+            Desarrollador fullstack apasionado,<br>
             proactivo y ambicioso.
           </p>
+        </div>
 
-          <div class="quiensoy-container-img">
+          <div class="home-container-img">
+
             <div class="img-foto">
               <img src="./assets/images/inicio.png" alt="image" />
             </div>
 
             <div class="img-icon">
-            <a href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/" target="_blank">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://www.instagram.com/exe_m666/" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://twitter.com/ExeBikerr" target="_blank">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
+              <a
+                href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.instagram.com/exe_m666/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://twitter.com/ExeBikerr" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+
           </div>
-          <div class="download-cv">
+        
+          <div class="home-download-cv">
             <a download="cv" href="./assets/cv.pdf">
               <i class="fa-solid fa-download"></i>
               Download CV
             </a>
           </div>
 
-        </div>
-        </div>
 
+        </div>
       </div>
 
       <!--HOME TABLET y DESKTOP-->
 
-      <div class="home-md">
+      <div class="home-xl">
 
         <div class="home-foto">
           <img src="./assets/images/inicio.png" alt="image" />
         </div>
 
         <div class="home-info">
-          <h1 class="animate__animated animate__bounce">Exequiel<br>Maydana</h1>
-          <p>Desarrollador fullstack apasionado,<br>
+          <h1 class="animate__animated animate__bounce">
+            Exequiel<br>Maydana
+          </h1>
+          <p>
+            Desarrollador fullstack apasionado,<br>
             proactivo y ambicioso.
           </p>
           <div class="info-icon">
-            <a href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/"
+              target="_blank"
+            >
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="https://www.instagram.com/exe_m666/" target="_blank">
@@ -154,87 +172,77 @@
             </a>
           </div>
         </div>
-
       </div>
 
       <!--SOBRE MI CARRERA COMO DESARROLLADOR-->
 
-      <div class="carrera" id="sobremi">
+      <section class="sobre-mi" id="sobremi">
         <h2>Sobre mi</h2>
-        <div class="carrera-text">
+        <article class="sobre-mi-text">
           <p>
             Actualmente (2022) me encuentro estudiando una Tec. En Desarrollo
-            Web, en el año 2021 fue la primera vez que interactue con la
-            programacion en el curso de ArgentinaPrograma-#YoProgramo en el cual
-            conoci los principales conceptos, actividades y herramientas que
-            requiere un programador Front-End y Back-End reflexionando sobre las
-            diversas tareas de un Full Stack Developer en una empresa. En este
-            curso trabajamos con Java POO, SQL, HTML, CSS y JavaScript. Cuando
-            lo termine segui profundizando en HTML, CSS y JavaScript con el
-            objetivo de crear mi primer proyecto que es este portafolio. Soy un
-            desarrollador apasionado por programar, crear e innovar. Soy una
-            persona con mucha curiosidad y atencion a los detalles, por lo que
-            siempre estoy aprendiendo cosas nuevas y nuevas formas de mejorar mi
-            forma de trabajar.
+            Web y en un curso de Desarrollo Web Full-Stack y Ciencias de la
+            Computación. tiene una duración de 5 a 9 meses. La primera vez que
+            interactúe con código fue en el año 2021, en el curso de Argentina
+            Programa, era un curso de Programación web con Java y SQL.
+            sinceramente no me fue muy bien ya que me frustraba mucho cuando no
+            sabía cómo encarar los problemas. Pero no me quede con eso, cuando
+            termine el curso me puse a profundizar en html, css y javascript y
+            empecé a armar este portafolio, hoy en día me siento mucho mejor y
+            sé a dónde quiero llegar. Soy una persona con mucha curiosidad y
+            atención a los detalles, por lo que siempre estoy aprendiendo cosas
+            nuevas y nuevas formas de mejorar mi forma de trabajar.
           </p>
-        </div>
-      </div>
-
+        </article>
+      </section>
 
       <!--Mis SKILLS-->
-
-      <div class="skills" id="skill">
-          <h2>Mis Habilidades</h2>
-        <div class="skills-img">
-          <img src="./assets/icon-skill-tools/piton.png" alt="logopython" />
-          <img src="./assets/icon-skill-tools/servidor-sql.png" alt="logosql" />
-          <img src="./assets/icon-skill-tools/html-5.png" alt="logohtml" />
+      <!--a las imagenes les di el width aca porque el logo de javascript es mas grande que los otros-->
+      <section class="skills" id="skill">
+        <h2>Mis Habilidades</h2>
+        <article class="skills-img">
+          <img src="./assets/icon-skill-tools/piton.png" alt="logopython" width="100"/>
+          <img src="./assets/icon-skill-tools/servidor-sql.png" alt="logosql" width="100"/>
+          <img src="./assets/icon-skill-tools/html-5.png" alt="logohtml"/>
           <img src="./assets/icon-skill-tools/css.png" alt="logocss" />
           <img src="./assets/icon-skill-tools/js.png" alt="logojavascript" width="100"/>
-          <img src="./assets/icon-skill-tools/nodejs.png" alt="logonodejs" />
-          <img src="./assets/icon-skill-tools/react.png" alt="logoreact" />
-          <img src="./assets/icon-skill-tools/github.png" alt="logogit" />
-        </div>
-      </div> 
+          <img src="./assets/icon-skill-tools/nodejs.png" alt="logonodejs" width="100"/>
+          <img src="./assets/icon-skill-tools/react.png" alt="logoreact" width="100"/>
+          <img src="./assets/icon-skill-tools/github.png" alt="logogit" width="100"/>
+        </article>
+      </section>
 
       <!--PORTFOLIO-->
 
-      <div class="container" id="portfolio">
+      <section class="proyectos" id="portfolio">
 
-          <h3>Portafolio</h3>
-  
-        <div class="container-proyecto">
-          <div class="proyecto">
+        <h3>Proyectos</h3>
+
+        <article class="proyectos-img">
             <img src="./assets/proyectos/Rectangle59.jpg" alt="e-comer"/>
-          </div>
-          <div class="proyecto">
+    
             <img src="./assets/proyectos/Rectangle48.jpg" alt="web" />
-          </div>
-          <div class="proyecto">
-            <img src="./assets/proyectos/Rectangle49.jpg" alt="web2" />
-          </div>
-        </div>
-      </div>
 
+            <img src="./assets/proyectos/Rectangle49.jpg" alt="web2" />
+        </article>
+      </section>
 
       <!--CONTACTO-->
-      <div class="container-contacto" id="contacto">
-
-          <h2>Contacto</h2>
+      <div class="contacto" id="contacto">
+        <h2>Contacto</h2>
 
         <div class="contacto-contactar">
-          
-          <div class="contactar-card1">
+
+          <div class="contactar-card">
             <img src="./assets/icon-contact/phone3.svg" alt="logophone" />
             <h3>Numero celular</h3>
             <p>3454-076854</p>
           </div>
-          <div class="contactar-card2">
+          <div class="contactar-card">
             <img src="./assets/icon-contact/mail3.svg" alt="logoemail" />
             <h3>Email</h3>
             <p>maydanarkt@gmail.com</p>
           </div>
-          
         </div>
       </div>
     </main>
@@ -249,6 +257,7 @@
     </footer>
 
 
+    <!--JavaScript-->
     <script src="./js/coding.js"></script>
   </body>
 </html>
