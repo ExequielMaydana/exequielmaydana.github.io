@@ -1,4 +1,4 @@
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 480px){
   body {
     background-color: var(--color-white);
     font-family: var(--fuente);
@@ -299,13 +299,15 @@
 
 
 
-@media (min-width: 769px) and (max-width: 1442px){
+@media (min-width: 768px){
 
   body {
     background-color: var(--color-white);
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 400;
+    
+    max-width: 1442px;
   }
 
   :root {
@@ -327,7 +329,7 @@
     display: none;
   }
 
-  .header {
+  .header-xl {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -340,7 +342,7 @@
     box-shadow: 1px 0 7px 2px #8E7BEF;
   }
 
-  .nav{
+  .nav-xl{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,13 +350,13 @@
     max-width: 1442px;
   }
 
-  .nav-menu {
+  .nav-menu-xl {
     display: contents;
     margin-right: 20px;
     list-style: none;
   }
 
-  .nav-menu-item {
+  .nav-menu-item-xl {
     margin: 0 20px;
     width: max-content;
     font-size: 1rem;
@@ -391,8 +393,10 @@
 
   .home-xl {
     display: flex;
-    width: 100%;
     padding: 60px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .home-foto {
@@ -431,7 +435,7 @@
   }
 
   .info-icon {
-    max-width: 100%;
+    max-width: 30%;
     display: flex;
     flex-direction: row;
     margin: 0 0 30px 0 ;
@@ -458,7 +462,7 @@
     display: flex;
     align-items: flex-start;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
   }
 
   .info-download-cv i {
