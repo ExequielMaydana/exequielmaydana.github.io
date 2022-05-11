@@ -306,8 +306,6 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    
-    max-width: 1442px;
   }
 
   :root {
@@ -327,6 +325,14 @@
   /* el button amburguesa */
   .nav button {
     display: none;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1442px;
   }
 
   .header-xl {
