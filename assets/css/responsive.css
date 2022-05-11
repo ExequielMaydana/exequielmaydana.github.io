@@ -1,4 +1,4 @@
-@media (min-width: 480px){
+@media (min-width: 481px){
   body {
     background-color: var(--color-white);
     font-family: var(--fuente);
@@ -299,7 +299,7 @@
 
 
 
-@media (min-width: 768px){
+@media (min-width: 769px){
 
   body {
     background-color: var(--color-white);
