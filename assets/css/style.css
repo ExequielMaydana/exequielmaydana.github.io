@@ -63,12 +63,18 @@ html{
   height: calc(100% - 40px);
   overflow-y: auto;
   left: 100%;
-  transition: left 0.3s;
+  transition: left 0.4s;
+
+  display: flex;
+  align-items: center;
 }
 
 .nav-menu-item {
   margin: 10% 15% 0 0;
   list-style: none;
+  
+  display: flex;
+  gap: 5px;
 }
 
 .nav-link {
