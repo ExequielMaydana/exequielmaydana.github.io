@@ -80,6 +80,7 @@ html{
 .nav-link {
   text-decoration: none;
   color: #000000;
+  font-weight: 600;
 }
 
 .nav-menu-link:hover {
