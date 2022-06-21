@@ -213,18 +213,57 @@
 
       <!--PORTFOLIO-->
 
-      <section class="proyectos" id="portfolio">
+      <div class="proyectos" id="portfolio">
 
         <h3>Proyectos</h3>
 
-        <article class="proyectos-img">
-            <img src="./assets/images/proyectos/Rectangle59.jpg" alt="e-comer"/>
-    
-            <img src="./assets/images/proyectos/Rectangle48.jpg" alt="web" />
-
-            <img src="./assets/images/proyectos/Rectangle49.jpg" alt="web2" />
-        </article>
-      </section>
+        <div class="proyectos-img">
+          <figure class="img-item">
+            <img src="./assets/images/proyectos/App-clima.png" alt="App-Clima"/>
+            <div class="capa">
+              <h4>Descripcion:</h4>
+              <p>
+                Consumimos una API del clima que al acceder a ella, 
+                el navegador le pregunta al usuario si desea o no permitir que la web acceda a su ubicacion actual
+                para asi poder mostrar la condicion climatica de su ubicacion en tiempo real.
+              </p>
+              <div class="capa-enlaces">
+              <a href="https://github.com/ExequielMaydana/weather-app-react" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="https://weather-app-maydanacode.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Visitar</a>
+              </div>
+            </div>
+          </figure>
+          <figure class="img-item">
+            <img src="./assets/images/proyectos/form-users.png" alt="App-Users"/>
+            <div class="capa">
+              <h4>Descripcion:</h4>
+              <p>
+                En esta App se consumio una API de usuarios, hice peticiones http a traves de la libreria axios e hicimos un CRUD, es decir, 
+                podemos leer, actualizar y borrar un usuario. Puse en practica, 
+                hooks, componentes, useEffect, useState y tambien React Hook Form.
+              </p>
+              <div class="capa-enlaces">
+                <a href="https://github.com/ExequielMaydana/App-usuarios-React" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://app-users-maydana-code.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Visitar</a>
+              </div>
+            </div>
+          </figure>
+          <figure class="img-item">
+            <img src="./assets/images/proyectos/ricky-and-morty.png" alt="App-RickyAndMorty"/>
+            <div class="capa">
+              <h4>Descripcion:</h4>
+              <p>
+                En esta ocasion consumi la famosa API de Ricky and Morty, en la App podemos ver 126 ubicaciones de dimensiones, 
+                mostrando a su vez los personajes que estan en esa dimension, tenemos un buscador donde podemos buscar una dimension entre 1 y 126.
+              </p>
+              <div class="capa-enlaces">
+                <a href="https://github.com/ExequielMaydana/ricky-and-morty-App-React" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://ricky-and-morty-maydana-code.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Visitar</a>
+              </div>
+            </div>
+            </figure>
+        </div>
+      </div>
 
       <!--CONTACTO-->
       <div class="contacto" id="contacto">

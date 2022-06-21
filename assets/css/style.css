@@ -244,35 +244,103 @@ html{
 /* PROYECTOS */
 
 .proyectos {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-direction: column;
-  padding: 40px 0;
-  width: 100%;
-  margin-bottom: 30px;
 }
 
 .proyectos h3 {
-  font-size: var(--font-titulos);
+  margin: 6% 0 4% 0;
   font-weight: 600;
-  margin: 0 0 10% 0;
+  font-size: var(--font-titulos);
   color: var(--color-titulos);
-  text-shadow: 2px 2px 2px #7f799b;
+  text-shadow: 2px 3px 2px #7f799b;
 }
 
-.proyectos-img {
-  max-width: 90%;
+/* contenedor de los figure que encierran las imagenes y su descripcion */
+.proyectos-img{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+
+ gap: 5px;
+ flex-wrap: wrap;
+}
+
+.img-item {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+
   display: flex;
   flex-direction: column;
+  box-shadow: 2px 2px 4px #222222;
 }
 
-.proyectos-img img {
-  max-width: 100%;
-  box-shadow: 2px 2px 6px #000000;
-  margin: 20px 0;
+
+.img-item img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
 }
+
+.img-item .capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(234, 233, 240, 0.7);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  text-align: center;
+}
+
+.img-item:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.capa {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.capa h4, p {
+  margin: 5px 0 0 0;
+  font-size: 0.7rem;
+}
+
+.capa-enlaces{
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 10px;
+}
+
+.capa-enlaces a {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #201e2c;
+  color: #F9F5F2;
+}
+
+.capa-enlaces a {
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.capa-enlaces i {
+  color: #F9F5F2;
+}
+
 
 /* CONTACTO */
 
