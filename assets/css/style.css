@@ -270,6 +270,47 @@ html{
   transition: 0.3s;
 }
 
+.container-formacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  width: 100%;
+  padding: 40px 0 0 0;
+  gap: 10px;
+}
+
+.container-formacion h2{
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 2% 0 5% 0;
+  color: #F9F5F2;
+}
+
+.formacion-card {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  background-color: #D6DBDF;
+  box-shadow: 3px 3px 4px #131313;
+  border-radius: 5px;
+}
+
+.formacion-card h3 {
+  font-size: 1rem;
+  margin: 5px 0 5px 0;
+}
+
+.formacion-card p {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+}
+
 /* PROYECTOS */
 
 .proyectos {

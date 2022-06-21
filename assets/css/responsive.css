@@ -220,6 +220,33 @@
     transition: 0.3s;
   }
 
+  /* formacion academica */
+  
+  .container-formacion h2{
+    font-size: 2rem;
+    margin: 2% 0 5% 0;
+  }
+  
+  .formacion-card {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  
+    background-color: #D6DBDF;
+    box-shadow: 3px 3px 4px #131313;
+    border-radius: 5px;
+  }
+  
+  .formacion-card h3 {
+    font-size: 1rem;
+    margin: 5px 0 5px 0;
+  }
+  
+  .formacion-card p {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+  }
+
   /* PROYECTOS */
 
   .proyectos {
@@ -522,6 +549,36 @@
 
   .icon-card i {
     font-size: 4rem;
+  }
+
+   /* formacion academica */
+   .container-formacion{
+    gap: 30px;
+   }
+  
+   .container-formacion h2{
+    font-size: 2.5rem;
+    margin: 4% 0 2% 0;
+  }
+  
+  .formacion-card {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  
+    background-color: #D6DBDF;
+    box-shadow: 3px 3px 4px #131313;
+    border-radius: 5px;
+  }
+  
+  .formacion-card h3 {
+    font-size: 1.3rem;
+    padding: 5px;
+  }
+  
+  .formacion-card p {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
   }
 
   /* PROYECTOS */
