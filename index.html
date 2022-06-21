@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,400&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -48,15 +48,13 @@
 
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
-    <link rel="icon" href="./assets/images/log.ico">
+    <link rel="icon" href="./assets/images/log.ico" />
     <title>PORTAFOLIO|Exequiel Maydana</title>
   </head>
   <body>
     <!--HEADER-->
-
     <header class="header header-xl">
       <!--NAVBAR-->
-
       <nav class="nav nav-xl">
         <!--agregamos un aria-label para las personas con discapacidad-->
         <button class="nav-toggle" aria-label="Abrir menu">
@@ -66,25 +64,35 @@
         <ul class="nav-menu nav-menu-xl">
           <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-house"></i>
-            <a href="#home" class="nav-menu-link nav-link nav-link-home nav-toggle"
+            <a
+              href="#home"
+              class="nav-menu-link nav-link nav-link-home nav-toggle"
               >Home</a
             >
           </li>
           <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-user"></i>
-            <a href="#sobremi" class="nav-menu-link nav-link nav-toggle">Acerca de mi</a>
+            <a href="#sobremi" class="nav-menu-link nav-link nav-toggle"
+              >Acerca de mi</a
+            >
           </li>
           <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-laptop-code"></i>
-            <a href="#skill" class="nav-menu-link nav-link nav-toggle">Mis habilidades</a>
+            <a href="#skill" class="nav-menu-link nav-link nav-toggle"
+              >Mis habilidades</a
+            >
           </li>
           <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-diagram-project"></i>
-            <a href="#portfolio" class="nav-menu-link nav-link nav-toggle">Portafolio</a>
+            <a href="#portfolio" class="nav-menu-link nav-link nav-toggle"
+              >Portafolio</a
+            >
           </li>
           <li class="nav-menu-item nav-menu-item-xl">
             <i class="fa-solid fa-envelope"></i>
-            <a href="#contacto" class="nav-menu-link nav-link nav-toggle">Contacto</a>
+            <a href="#contacto" class="nav-menu-link nav-link nav-toggle"
+              >Contacto</a
+            >
           </li>
         </ul>
       </nav>
@@ -93,63 +101,52 @@
     <main>
       <!--Inicio Movil-->
       <div class="home" id="home">
-
         <div class="home-title">
-          <h1>Exequiel<br />Maydana</h1>
-          <p>
-            Desarrollador fullstack apasionado,<br>
-            proactivo y ambicioso.
-          </p>
+          <h1>Exequiel Maydana</h1>
+          <p>Desarrollador fullstack apasionado, proactivo y ambicioso.</p>
         </div>
 
-          <div class="home-container-img">
-
-            <div class="img-foto">
-              <img src="./assets/images/inicio.png" alt="image" />
-            </div>
-
-            <div class="img-icon">
-              <a
-                href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/"
-                target="_blank"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a href="https://www.instagram.com/exe_m666/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://twitter.com/ExeBikerr" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </div>
-
+        <div class="home-container-img">
+          <div class="img-foto">
+            <img src="./assets/images/inicio.png" alt="image" />
           </div>
-        
-          <div class="home-download-cv">
-            <a download="cv" href="./assets/cv.pdf">
-              <i class="fa-solid fa-download"></i>
-              Download CV
+
+          <div class="img-icon">
+            <a
+              href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/exe_m666/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/ExeBikerr" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
             </a>
           </div>
-
-
+        </div>
+        <div class="home-download-cv">
+          <a download="cv" href="./assets/cv.pdf">
+            <i class="fa-solid fa-download"></i>
+            Download CV
+          </a>
         </div>
       </div>
 
       <!--HOME TABLET y DESKTOP-->
-
       <div class="home-xl">
-
+        
         <div class="home-foto">
           <img src="./assets/images/inicio.png" alt="image" />
         </div>
 
         <div class="home-info">
           <h1 class="animate__animated animate__bounce">
-            Exequiel<br>Maydana
+            Exequiel Maydana
           </h1>
           <p>
-            Desarrollador fullstack apasionado,<br>
+            Desarrollador fullstack apasionado,
             proactivo y ambicioso.
           </p>
           <div class="info-icon">
@@ -176,7 +173,6 @@
       </div>
 
       <!--SOBRE MI CARRERA COMO DESARROLLADOR-->
-
       <section class="sobre-mi" id="sobremi">
         <h2>Sobre mi</h2>
         <article class="sobre-mi-text">
@@ -187,113 +183,135 @@
             interactúe con código fue en el año 2021, en el curso de Argentina
             Programa, era un curso de Programación web con Java y SQL, cuando
             termine el curso me puse a profundizar en html, css y javascript y
-            empecé a armar este portafolio, hoy en día me siento mucho mejor y
-            sé a dónde quiero llegar. Soy una persona con mucha curiosidad y
-            atención a los detalles, por lo que siempre estoy aprendiendo cosas
-            nuevas y nuevas formas de mejorar mi forma de trabajar.
+            empecé a armar este portafolio. Soy una persona con mucha curiosidad
+            y atención a los detalles, por lo que siempre estoy aprendiendo
+            cosas nuevas y nuevas formas de mejorar mi forma de trabajar.
           </p>
         </article>
       </section>
 
       <!--Mis SKILLS-->
       <!--a las imagenes les di el width aca porque el logo de javascript es mas grande que los otros-->
-      <section class="skills" id="skill">
+      <article class="skills" id="skill">
         <h2>Mis Habilidades</h2>
-        <article class="skills-img">
-          <img src="./assets/images/icon-skill-tools/piton.png" alt="logopython" width="100"/>
-          <img src="./assets/images/icon-skill-tools/servidor-sql.png" alt="logosql" width="100"/>
-          <img src="./assets/images/icon-skill-tools/html-5.png" alt="logohtml"/>
-          <img src="./assets/images/icon-skill-tools/css.png" alt="logocss" />
-          <img src="./assets/images/icon-skill-tools/js.png" alt="logojavascript" width="100"/>
-          <img src="./assets/images/icon-skill-tools/nodejs.png" alt="logonodejs" width="100"/>
-          <img src="./assets/images/icon-skill-tools/react.png" alt="logoreact" width="100"/>
-          <img src="./assets/images/icon-skill-tools/github.png" alt="logogit" width="100"/>
-        </article>
-      </section>
+        <section class="skills-icon">
+          <div class="icon-card">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa-brands fa-js"></i>
+            <p>JAVASCRIPT</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa-brands fa-react"></i>
+            <p>REACT</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa-brands fa-node"></i>
+            <p>NODEJS</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa-brands fa-python"></i>
+            <p>PYTHON</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa-brands fa-git-alt"></i>
+            <p>GIT</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa-solid fa-database"></i>
+            <p>SQL</p>
+          </div>
+        </section>
+      </article>
 
       <!--PORTFOLIO-->
 
       <div class="proyectos" id="portfolio">
-
         <h3>Proyectos</h3>
 
-        <div class="proyectos-img">
-          <figure class="img-item">
-            <img src="./assets/images/proyectos/App-clima.png" alt="App-Clima"/>
-            <div class="capa">
-              <h4>Descripcion:</h4>
-              <p>
-                Consumimos una API del clima que al acceder a ella, 
-                el navegador le pregunta al usuario si desea o no permitir que la web acceda a su ubicacion actual
-                para asi poder mostrar la condicion climatica de su ubicacion en tiempo real.
-              </p>
-              <div class="capa-enlaces">
-              <a href="https://github.com/ExequielMaydana/weather-app-react" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-              <a href="https://weather-app-maydanacode.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Visitar</a>
-              </div>
-            </div>
-          </figure>
-          <figure class="img-item">
-            <img src="./assets/images/proyectos/form-users.png" alt="App-Users"/>
-            <div class="capa">
-              <h4>Descripcion:</h4>
-              <p>
-                En esta App se consumio una API de usuarios, hice peticiones http a traves de la libreria axios e hicimos un CRUD, es decir, 
-                podemos leer, actualizar y borrar un usuario. Puse en practica, 
-                hooks, componentes, useEffect, useState y tambien React Hook Form.
-              </p>
-              <div class="capa-enlaces">
-                <a href="https://github.com/ExequielMaydana/App-usuarios-React" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-                <a href="https://app-users-maydana-code.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Visitar</a>
-              </div>
-            </div>
-          </figure>
-          <figure class="img-item">
-            <img src="./assets/images/proyectos/ricky-and-morty.png" alt="App-RickyAndMorty"/>
-            <div class="capa">
-              <h4>Descripcion:</h4>
-              <p>
-                En esta ocasion consumi la famosa API de Ricky and Morty, en la App podemos ver 126 ubicaciones de dimensiones, 
-                mostrando a su vez los personajes que estan en esa dimension, tenemos un buscador donde podemos buscar una dimension entre 1 y 126.
-              </p>
-              <div class="capa-enlaces">
-                <a href="https://github.com/ExequielMaydana/ricky-and-morty-App-React" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-                <a href="https://ricky-and-morty-maydana-code.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Visitar</a>
-              </div>
-            </div>
+        <section class="container-card-p">
+          <article class="card-proyect">
+            <figure class="card-img">
+              <img src="./assets/images/proyectos/App-clima.png" />
+              <figcaption class="img-info">App del clima.<br>Consumi una API del clima, cuando el usuario accede a la App debe permitir que el navegador acceda a su ubicacion para asi poder mostrarle la condicion climatica de su ubicacion en tiempo real.</figcaption>
             </figure>
-        </div>
+              <div class="card-enlaces">
+              <a
+                href="https://github.com/ExequielMaydana/weather-app-react"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i> Code</a
+              >
+              <a
+                href="https://weather-app-maydanacode.netlify.app/"
+                target="_blank"
+                ><i class="fa-solid fa-globe"></i> Visitar</a
+              >
+            </article>
+          <article class="card-proyect">
+            <figure class="card-img">
+              <img src="./assets/images/proyectos/app-users.png" />
+              <figcaption class="img-info">App usuarios.<br>En esta App consumi una API de usuarios e hice un CRUD, es decir, podemos leer, actualizar y borrar un usuario. Puse en practica todo lo aprendido hasta el momento, hooks, componentes, useEffect, useState y tambien React Hook Form.</figcaption>
+            </figure>
+            <div class="card-enlaces">
+              <a href="https://github.com/ExequielMaydana/App-usuarios-React" target="_blank"
+                ><i class="fa-brands fa-github"></i> Code</a
+              >
+              <a href="https://app-users-maydana-code.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-globe"></i> Visitar</a
+              >
+            </div>
+          </article>
+          <article class="card-proyect">
+            <figure class="card-img">
+              <img src="./assets/images/proyectos/ricky-and-morty.png" />
+              <figcaption class="img-info">App Ricky and Morty.<br>En esta App podras ver las dimensiones que van desde 1 hasta 126, cuenta con un search para buscar las dimensiones y mostrar sus respectivos personajes de cada dimension.</figcaption>
+            </figure>
+            <div class="card-enlaces">
+              <a href="https://github.com/ExequielMaydana/ricky-and-morty-App-React" target="_blank"
+                ><i class="fa-brands fa-github"></i> Code</a
+              >
+              <a href="https://ricky-and-morty-maydana-code.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-globe"></i> Visitar</a
+              >
+            </div>
+          </article>
+        </section>
       </div>
 
       <!--CONTACTO-->
-      <div class="contacto" id="contacto">
-        <h2>Contacto</h2>
-
-        <div class="contacto-contactar">
-
-          <div class="contactar-card">
-            <img src="./assets/images/icon-contact/phone3.svg" alt="logophone" />
-            <h3>Numero celular</h3>
-            <p>3454-076854</p>
-          </div>
-          <div class="contactar-card">
-            <img src="./assets/images/icon-contact/mail3.svg" alt="logoemail" />
-            <h3>Email</h3>
-            <p>maydanarkt@gmail.com</p>
-          </div>
+      <div class="container-form">
+      <form class="form" id="contacto">
+        <h2>Creemos algo juntos!</h2>
+        <div class="form-item">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="user_name" required>
         </div>
-      </div>
+        <div class="form-item"> 
+          <label for="email">Email</label>
+          <input type="email" id="email" name="user_email" required>
+        </div>
+        <div class="form-item">
+          <label for="msg">Dejame tu mensaje</label>
+          <textarea id="msg" name="user_message" required></textarea>
+        </div>
+        <button>Enviar</button>
+      </form>
+    </div>
     </main>
 
     <!--FOOTER-->
 
     <footer class="foter">
       <div class="foter-tit">
-        <h2>Exequiel Maydana</h2>
-        <h3>¡Hecho con mucho amor!</h3>
+        <h2>Creado por Exequiel Maydana</h2>
       </div>
     </footer>
-
 
     <!--JavaScript-->
     <script src="./js/coding.js"></script>
